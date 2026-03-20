@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Implementatie voor KMO's | Whatsnext</title>
+  <meta name="description" content="Van AI-strategie tot concrete implementatie in jouw KMO. Stappen, veelgemaakte fouten en verwachte resultaten voor Belgische bedrijven." />
+  <link rel="stylesheet" href="/src/css/tailwind.css" />
+  <style>
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    .animate-fade-in { animation: fadeInUp 0.6s ease-out forwards; }
+    [data-reveal] { opacity:0; transform:translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    [data-reveal].revealed { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body class="bg-base text-text selection:bg-accent selection:text-white">
+  <header id="site-header">
+    <script>fetch('/src/components/header.html').then(r=>r.text()).then(h=>document.getElementById('site-header').innerHTML=h);</script>
+  </header>
+  <main class="max-w-6xl mx-auto px-6 mb-24">
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-24 mesh-gradient -mt-32 rounded-b-3xl overflow-hidden animate-fade-in">
+      <div class="max-w-4xl mx-auto text-center px-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-pill bg-white/50 border border-white shadow-sm text-accent font-black text-[10px] uppercase tracking-widest mb-8">
+          <span class="flex h-2 w-2 rounded-full bg-accent animate-pulse"></span>Implementatie Gids
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black leading-[1] tracking-tighter mb-8">
+          AI Implementatie<br/>voor <span class="text-accent italic font-serif font-normal lowercase tracking-normal">KMO's</span>
+        </h1>
+        <p class="text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto mb-12">Van strategie tot concrete AI-integratie in jouw organisatie. Een eerlijke gids zonder verkooppraat.</p>
+        <a href="/src/pages/scan.html" class="inline-flex items-center gap-4 bg-black text-white px-8 py-5 rounded-pill font-black hover:scale-105 hover:bg-accent transition-all shadow-2xl">
+          Start de gratis Maturity Scan
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Stappen -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-black tracking-tighter mb-4">De <span class="text-accent italic font-serif font-normal lowercase tracking-normal">5 implementatiestappen</span></h2>
+        <p class="text-gray-400 text-xl max-w-2xl mx-auto">Een bewezen aanpak die we toepassen met meer dan 200 Belgische KMO's.</p>
+      </div>
+      <div class="space-y-6">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 items-stretch">
+          <div class="p-8 bg-black text-white rounded-3xl flex flex-col" data-reveal>
+            <div class="text-4xl font-black text-accent mb-2">01</div>
+            <h3 class="font-black text-xl mb-3">Processen Analyseren</h3>
+            <p class="text-gray-400 text-sm leading-relaxed flex-grow">Breng in kaart welke processen het meest tijdrovend, repetitief en datagedreven zijn. Dit zijn de kandidaten voor AI.</p>
+            <div class="mt-6 text-[10px] font-black uppercase tracking-widest text-accent">Week 1-2</div>
+          </div>
+          <div class="p-8 border border-gray-100 rounded-3xl flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-reveal>
+            <div class="text-4xl font-black text-gray-300 mb-2">02</div>
+            <h3 class="font-black text-xl mb-3">Tool Selectie</h3>
+            <p class="text-gray-400 text-sm leading-relaxed flex-grow">Voor elk geïdentificeerd proces: selecteer de beste AI-tool op basis van integratie, prijs en gebruiksgemak voor jouw team.</p>
+            <div class="mt-6 text-[10px] font-black uppercase tracking-widest text-gray-400">Week 3</div>
+          </div>
+          <div class="p-8 border border-gray-100 rounded-3xl flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-reveal>
+            <div class="text-4xl font-black text-gray-300 mb-2">03</div>
+            <h3 class="font-black text-xl mb-3">Pilot Project</h3>
+            <p class="text-gray-400 text-sm leading-relaxed flex-grow">Test in een kleine, afgebakende omgeving. Leer snel, meet resultaten en pas aan voor de volledige uitrol.</p>
+            <div class="mt-6 text-[10px] font-black uppercase tracking-widest text-gray-400">Week 4-6</div>
+          </div>
+          <div class="p-8 border border-gray-100 rounded-3xl flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-reveal>
+            <div class="text-4xl font-black text-gray-300 mb-2">04</div>
+            <h3 class="font-black text-xl mb-3">Team Trainen</h3>
+            <p class="text-gray-400 text-sm leading-relaxed flex-grow">Geef praktische training aan de medewerkers die dagelijks met de AI-tools werken. Adoptie is de kritische succesfactor.</p>
+            <div class="mt-6 text-[10px] font-black uppercase tracking-widest text-gray-400">Week 7-8</div>
+          </div>
+          <div class="p-8 border border-accent/20 bg-red-50/30 rounded-3xl flex flex-col" data-reveal>
+            <div class="text-4xl font-black text-accent mb-2">05</div>
+            <h3 class="font-black text-xl mb-3">Volledige Integratie</h3>
+            <p class="text-gray-400 text-sm leading-relaxed flex-grow">Rol AI uit naar alle relevante afdelingen, meet KPI's en bouw continue verbetering in via maandelijkse reviews.</p>
+            <div class="mt-6 text-[10px] font-black uppercase tracking-widest text-accent">Maand 3+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fouten -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div>
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-pill bg-red-50 text-accent font-black text-[10px] uppercase tracking-widest mb-6">Leer van anderen</div>
+          <h2 class="text-4xl font-black tracking-tighter mb-8 leading-tight">Veelgemaakte <span class="text-accent italic font-serif font-normal lowercase tracking-normal">fouten</span></h2>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-5 bg-red-50 border border-red-100 rounded-2xl" data-reveal>
+              <span class="text-2xl flex-shrink-0">🏪</span>
+              <div><h4 class="font-black mb-1">Te snel tools kopen</h4><p class="text-gray-400 text-sm leading-relaxed">Veel bedrijven kopen tools voor ze weten welk probleem ze willen oplossen. Gebruik de 80/20 regel: analyseer eerst, koop pas dan.</p></div>
+            </div>
+            <div class="flex items-start gap-4 p-5 bg-red-50 border border-red-100 rounded-2xl" data-reveal>
+              <span class="text-2xl flex-shrink-0">🗺️</span>
+              <div><h4 class="font-black mb-1">Geen strategie</h4><p class="text-gray-400 text-sm leading-relaxed">AI zonder richting is geld verspillen. Definieer vooraf welke KPI's verbeteren moeten en hoe je dat gaat meten.</p></div>
+            </div>
+            <div class="flex items-start gap-4 p-5 bg-red-50 border border-red-100 rounded-2xl" data-reveal>
+              <span class="text-2xl flex-shrink-0">👤</span>
+              <div><h4 class="font-black mb-1">Geen training voorzien</h4><p class="text-gray-400 text-sm leading-relaxed">De tool is slechts 20% van het succes. 80% zit in of je team de tool effectief gebruikt. Investeer in training en voortdurende ondersteuning.</p></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-pill bg-green-50 text-green-700 font-black text-[10px] uppercase tracking-widest mb-6">Verwachte resultaten</div>
+          <h2 class="text-4xl font-black tracking-tighter mb-8 leading-tight">Wat je mag <span class="text-accent italic font-serif font-normal lowercase tracking-normal">verwachten</span></h2>
+          <div class="space-y-4">
+            <div class="p-6 border border-gray-100 rounded-2xl" data-reveal>
+              <div class="flex items-center gap-4 mb-3">
+                <div class="text-3xl font-black text-accent">-40%</div>
+                <h4 class="font-black text-lg">Kostenbesparing</h4>
+              </div>
+              <p class="text-gray-400 text-sm">Gemiddelde reductie in administratieve kosten na volledige AI-implementatie bij onze KMO-klanten.</p>
+            </div>
+            <div class="p-6 border border-gray-100 rounded-2xl" data-reveal>
+              <div class="flex items-center gap-4 mb-3">
+                <div class="text-3xl font-black text-accent">+35%</div>
+                <h4 class="font-black text-lg">Efficiëntie</h4>
+              </div>
+              <p class="text-gray-400 text-sm">Meer output per medewerker dankzij AI-assistentie bij dagelijkse taken en besluitvorming.</p>
+            </div>
+            <div class="p-6 border border-gray-100 rounded-2xl" data-reveal>
+              <div class="flex items-center gap-4 mb-3">
+                <div class="text-3xl font-black text-accent">3×</div>
+                <h4 class="font-black text-lg">Snellere Workflows</h4>
+              </div>
+              <p class="text-gray-400 text-sm">Van offerte tot levering, van lead tot klant — AI verdriedubbert de snelheid van kritische bedrijfsprocessen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-black text-white rounded-3xl px-12 text-center" data-reveal>
+      <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">Begin in 2 minuten<br/>met de Maturity Scan</h2>
+      <p class="text-gray-400 mb-10 text-lg">Ontdek jouw implementatie-startpunt en ontvang een gepersonaliseerd stappenplan.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/src/pages/scan.html" class="inline-flex items-center gap-3 bg-accent text-white px-10 py-5 rounded-pill font-black hover:bg-white hover:text-black transition-all shadow-2xl">
+          Start de gratis scan
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Internal Links / Related -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-12">
+        <div class="max-w-xl">
+          <h2 class="text-3xl font-black tracking-tighter mb-4">Volgende <span class="text-accent italic font-serif font-normal lowercase tracking-normal">Gidsen</span></h2>
+          <p class="text-gray-400">Verdiep je in strategie en rendement na de implementatie.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <a href="/src/pages/ai-strategie-kmo.html" class="group p-8 rounded-3xl border border-gray-100 hover:border-accent/20 hover:shadow-xl transition-all">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center text-xl group-hover:bg-accent/10 transition-colors">🗺️</div>
+            <h3 class="font-black text-lg">AI Strategie</h3>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">Lees hoe je een solide AI-strategie bouwt die aansluit bij je implementatie-doelen.</p>
+        </a>
+        <a href="/src/pages/ai-roi-calculator.html" class="group p-8 rounded-3xl border border-gray-100 hover:border-accent/20 hover:shadow-xl transition-all">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-gray-50 flex items-center justify-center text-xl group-hover:bg-accent/10 transition-colors">🧮</div>
+            <h3 class="font-black text-lg">ROI Calculator</h3>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">Bereken exact hoeveel tijd en geld je bespaart met de stappen uit deze gids.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer">
+    <script>fetch('/src/components/footer.html').then(r=>r.text()).then(h=>document.getElementById('site-footer').innerHTML=h);</script>
+  </footer>
+  <script>
+    (function(){ const obs = new IntersectionObserver(entries => entries.forEach((e,i)=>{ if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('revealed'),i*80); obs.unobserve(e.target); }}),{threshold:0.12}); document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el)); })();
+  </script>
+</body>
+</html>

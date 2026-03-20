@@ -1,0 +1,54 @@
+# Stand van Zaken - Whatsnext Prototype
+Datum: 11 maart 2026
+
+## 1. Algemene voortgang & Visie
+We werken aan de productie-release van de **Whatsnext AI Lead Engine**. Het prototype is nu functioneel en wordt klaargemaakt voor een transitie naar een volwaardig consultancy platform. De visie is helder: een premium SaaS-uitstraling met interactieve tools die bezoekers transformeren in gekwalificeerde leads voor strategiegesprekken.
+
+**Stack Visie**: Overgang van statische HTML/JS naar Next.js + Vercel wordt voorbereid voor optimale performance en schaalbaarheid.
+
+## 2. Website Inhoud & Structuur
+De site bestaat uit in totaal **12 pagina's**, onderverdeeld in strategische secties:
+
+- **Centraal**: 
+    - `index.html`: Een uitgebreide homepage met focus op geloofwaardigheid, visie en directe actie.
+    - `src/pages/scan.html`: De centrale landingsplek voor de Maturity Scan.
+- **Batch 1: Strategie & Impact (Conversie-focus)**:
+    - AI ROI Calculator: Voor directe zakelijke berekeningen.
+    - AI Strategie voor KMO's: Een 5-stappen roadmap.
+    - AI voor Bouwbedrijven: Verticale expertise focus.
+    - AI Playbooks: Praktische "kaarten" voor verschillende afdelingen (Marketing, HR, etc.).
+- **Batch 2: Kennis & Educatie (SEO-focus)**:
+    - AI Tools Vergeleken: Gedetailleerde vergelijkingstabel.
+    - Prompt Academy: Frameworks voor beter prompten.
+    - AI Wetgeving België: Focus op EU AI Act & GDPR.
+    - AI Trends België: Blik op de nabije toekomst.
+    - AI Implementatie: Stappenplan voor uitrol.
+    - Resources Hub: Centraal overzicht van alle gidsen.
+
+## 3. Functionele Interactie (De Gebruikerservaring)
+De website is ontworpen om de bezoeker continu te betrekken via interactieve elementen:
+
+- **AI Maturity Scan**: Bezoekers vullen een korte survey in (-1 lead info + 3 vragen). De site berekent direct hun score (%) en geeft een gepersonaliseerd adviesniveau (Beginner, Intermediate, Advanced) met bijbehorende tips en tools.
+- **ROI Calculator**: Een dynamisch formulier waar gebruikers hun bedrijfsgegevens (FTE, salaris, uren aan admin) invoeren. De calculator toont direct de jaarlijkse besparing in Euro's en uren die door AI-automatisering bereikt kan worden.
+- **Ask Whatsnext AI (Mock)**: In de header en op de homepage zit een AI-command bar. Gebruikers kunnen vragen stellen, en de site simuleert een AI-respons die relevante interne artikelen of diensten suggereert.
+- **Prompt Vault**: Op de homepage kunnen gebruikers direct AI-prompts kopiëren naar hun klembord met één klik, wat de praktische waarde van de site direct onderstreept.
+- **Mega-Dropdown Navigatie**: Gebruikers worden door een overzichtelijke dropdown ("Gidsen") geleid naar de juiste content, verdeeld in 'Strategie' en 'Leren'.
+
+## 4. Technisch Ontwerp & UX
+- **Design Systeem**: Gebruik van "Glassmorphism" (doorschijnende elementen), premium mesh-gradients voor diepte, en een mix van Inter (modern) en Playfair Display (autoriteit) lettertypes.
+- **Animaties**: Scroll-reveal effecten waarbij secties omhoog vallen bij het scrollen, wat zorgt voor een levendige, high-end uitstraling.
+- **Backend & Leads**: Alle interacties (Scan, ROI) zijn nu gekoppeld aan een Supabase backend. Zodra een gebruiker zijn gegevens invult, worden deze opgeslagen in een centrale `leads` tabel voor sales-opvolging.
+
+## 5. Onlangs voltooid (Conversie Optimalisatie)
+We hebben de "Mail Rapport" drempel verwijderd. 
+- Gegevens (naam/e-mail) worden nu **vooraf** gevraagd.
+- Resultaten worden **direct** getoond (geen wachttijd op e-mail).
+- Er is altijd een directe call-to-action naar het **AI Strategiegesprek**.
+
+## 6. Volgende Stappen
+- **Verificatie**: Live data synchronisatie testen.
+- **WordPress**: De code is "WordPress-ready" gestructureerd voor snelle omzetting naar Elementor widgets.
+- **Calendly**: Integratie van de finale boekingslinks.
+
+---
+Gemaakt door Antigravity (AI Assistant)

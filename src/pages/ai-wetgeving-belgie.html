@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Wetgeving voor Belgische KMO's | Whatsnext</title>
+  <meta name="description" content="Wat Belgische KMO's moeten weten over de EU AI Act, GDPR en verantwoord AI-gebruik. Praktische checklist voor bedrijven." />
+  <link rel="stylesheet" href="/src/css/tailwind.css" />
+  <style>
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    .animate-fade-in { animation: fadeInUp 0.6s ease-out forwards; }
+    [data-reveal] { opacity:0; transform:translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    [data-reveal].revealed { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body class="bg-base text-text selection:bg-accent selection:text-white">
+  <header id="site-header">
+    <script>fetch('/src/components/header.html').then(r=>r.text()).then(h=>document.getElementById('site-header').innerHTML=h);</script>
+  </header>
+  <main class="max-w-6xl mx-auto px-6 mb-24">
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-24 mesh-gradient -mt-32 rounded-b-3xl overflow-hidden animate-fade-in">
+      <div class="max-w-4xl mx-auto text-center px-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-pill bg-white/50 border border-white shadow-sm text-accent font-black text-[10px] uppercase tracking-widest mb-8">
+          <span class="flex h-2 w-2 rounded-full bg-accent animate-pulse"></span>Regelgeving & Compliance
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black leading-[1] tracking-tighter mb-8">
+          AI Wetgeving voor<br/><span class="text-accent italic font-serif font-normal lowercase tracking-normal">Belgische KMO's</span>
+        </h1>
+        <p class="text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto mb-12">Wat bedrijven moeten weten over AI, privacy en de Europese AI Act. Duidelijk en zonder juridisch jargon.</p>
+        <a href="/src/pages/scan.html" class="inline-flex items-center gap-4 bg-black text-white px-8 py-5 rounded-pill font-black hover:scale-105 hover:bg-accent transition-all shadow-2xl">
+          Start de gratis Maturity Scan
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Waarom regelgeving -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-pill bg-red-50 text-accent font-black text-[10px] uppercase tracking-widest mb-6">Waarom dit belangrijk is</div>
+          <h2 class="text-4xl font-black tracking-tighter mb-8 leading-tight">Regelgeving die <span class="text-accent italic font-serif font-normal lowercase tracking-normal">elke</span> KMO beïnvloedt</h2>
+          <p class="text-gray-400 text-lg leading-relaxed mb-8">De EU AI Act is de eerste grote AI-wetgeving ter wereld en geldt voor elk bedrijf dat AI gebruikt — ook jouw KMO. Niet weten is geen excuus.</p>
+          <ul class="space-y-5">
+            <li class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5"><span class="text-accent text-sm font-black">!</span></div>
+              <div><h4 class="font-black mb-1">EU AI Act (2024)</h4><p class="text-gray-400 text-sm leading-relaxed">De Europese AI-wet deelt AI-systemen in risicoklassen in. Sommige toepassingen zijn verboden, andere vereisen transparantie. KMO's moeten weten waar ze staan.</p></div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5"><span class="text-accent text-sm font-black">!</span></div>
+              <div><h4 class="font-black mb-1">GDPR en AI</h4><p class="text-gray-400 text-sm leading-relaxed">AI-tools verwerken vaak persoonsgegevens. Dat valt onder GDPR. Je moet kunnen aantonen hoe jouw AI-tools data gebruiken en opslaan.</p></div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5"><span class="text-accent text-sm font-black">!</span></div>
+              <div><h4 class="font-black mb-1">Verantwoord datagebruik</h4><p class="text-gray-400 text-sm leading-relaxed">Klantdata invoeren in openbare AI-tools (zoals ChatGPT) zonder toestemming is een privacy-risico. Gebruik enterprise-versies of private oplossingen.</p></div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5"><span class="text-accent text-sm font-black">!</span></div>
+              <div><h4 class="font-black mb-1">Risico's voor bedrijven</h4><p class="text-gray-400 text-sm leading-relaxed">Boetes tot €30 miljoen of 6% van de jaaromzet bij inbreuken op de AI Act. Voorkomen is beter dan genezen.</p></div>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-black text-white p-10 rounded-3xl">
+          <p class="text-[10px] font-black uppercase tracking-widest text-accent mb-6">Tijdslijn EU AI Act</p>
+          <div class="space-y-6">
+            <div class="flex gap-5"><div class="w-20 text-accent font-black flex-shrink-0">2024</div><div><p class="font-black mb-1">AI Act in werking</p><p class="text-gray-400 text-sm">De EU AI Act is officieel gepubliceerd en treedt gefaseerd in werking.</p></div></div>
+            <div class="w-full h-px bg-white/10"></div>
+            <div class="flex gap-5"><div class="w-20 text-accent font-black flex-shrink-0">2025</div><div><p class="font-black mb-1">Verboden AI-praktijken</p><p class="text-gray-400 text-sm">Verbod op hoog-risico AI-toepassingen zoals manipulatieve systemen.</p></div></div>
+            <div class="w-full h-px bg-white/10"></div>
+            <div class="flex gap-5"><div class="w-20 text-accent font-black flex-shrink-0">2026</div><div><p class="font-black mb-1">Volledige toepassing</p><p class="text-gray-400 text-sm">Alle regels zijn van kracht. KMO's moeten compliant zijn of riskeren boetes.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regels cards -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-black tracking-tighter mb-4">De <span class="text-accent italic font-serif font-normal lowercase tracking-normal">belangrijkste</span> regels</h2>
+        <p class="text-gray-400 text-xl max-w-2xl mx-auto">Samengevat voor KMO's zonder juridische achtergrond.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-10 border border-gray-100 rounded-3xl hover:-translate-y-2 hover:shadow-xl hover:border-accent/20 transition-all duration-300" data-reveal>
+          <div class="text-3xl mb-5">🇪🇺</div>
+          <h3 class="text-2xl font-black mb-4">EU AI Act</h3>
+          <p class="text-gray-400 leading-relaxed mb-4">AI-systemen worden ingedeeld in 4 risiconiveaus: onaanvaardbaar, hoog, beperkt en minimaal risico. De meeste KMO-tools vallen in de laagste categorie.</p>
+          <div class="bg-green-50 border border-green-200 rounded-2xl p-4"><p class="text-green-800 text-sm font-bold">✓ Goed nieuws: marketing AI, chatbots en productiviteitstools vallen doorgaans in de categorie minimaal risico.</p></div>
+        </div>
+        <div class="p-10 border border-gray-100 rounded-3xl hover:-translate-y-2 hover:shadow-xl hover:border-accent/20 transition-all duration-300" data-reveal>
+          <div class="text-3xl mb-5">🔒</div>
+          <h3 class="text-2xl font-black mb-4">GDPR en AI Tools</h3>
+          <p class="text-gray-400 leading-relaxed mb-4">Wanneer AI-tools persoonsgegevens verwerken, gelden de GDPR-regels. Dit betekent: transparantie, bewaarlimieten en het recht op correctie.</p>
+          <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-4"><p class="text-yellow-800 text-sm font-bold">⚠ Gebruik nooit klantgegevens in gratis AI-tools zonder toestemming. Kies voor enterprise-plannen met dataverwerking in de EU.</p></div>
+        </div>
+        <div class="p-10 border border-gray-100 rounded-3xl hover:-translate-y-2 hover:shadow-xl hover:border-accent/20 transition-all duration-300" data-reveal>
+          <div class="text-3xl mb-5">🛡️</div>
+          <h3 class="text-2xl font-black mb-4">Data Beveiliging</h3>
+          <p class="text-gray-400 leading-relaxed mb-4">AI-systemen zijn doelwitten voor cyberaanvallen. Zorg voor sterke toegangscontrole, encryptie van gevoelige data en regelmatige beveiligingsaudits.</p>
+          <div class="bg-green-50 border border-green-200 rounded-2xl p-4"><p class="text-green-800 text-sm font-bold">✓ Gebruik AI-tools die gecertificeerd zijn met ISO 27001 of SOC 2 voor maximale beveiliging.</p></div>
+        </div>
+        <div class="p-10 border border-gray-100 rounded-3xl hover:-translate-y-2 hover:shadow-xl hover:border-accent/20 transition-all duration-300" data-reveal>
+          <div class="text-3xl mb-5">👤</div>
+          <h3 class="text-2xl font-black mb-4">AI Gebruik in HR</h3>
+          <p class="text-gray-400 leading-relaxed mb-4">AI gebruiken bij wervingsbeslissingen valt onder de hoog-risico categorie van de AI Act. Kandidaten hebben het recht op menselijke beoordeling.</p>
+          <div class="bg-red-50 border border-red-200 rounded-2xl p-4"><p class="text-red-800 text-sm font-bold">Opgelet: Automatische CV-screening mag enkel ondersteunend zijn. Finale beslissingen moeten door mensen genomen worden.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checklist -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-black tracking-tighter mb-4">Wat bedrijven <span class="text-accent italic font-serif font-normal lowercase tracking-normal">concreet</span> moeten doen</h2>
+          <p class="text-gray-400 text-xl">Een praktische checklist om compliant te blijven.</p>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-center gap-5 p-6 border border-gray-100 rounded-2xl hover:border-accent/20 transition-colors" data-reveal>
+            <div class="w-8 h-8 rounded-xl bg-black text-white text-sm font-black flex items-center justify-center flex-shrink-0">1</div>
+            <div><h4 class="font-black mb-1">Controleer dataopslag</h4><p class="text-gray-400 text-sm">Weet waar jouw AI-tools data opslaan. Kies bij voorkeur voor EU-servers en lees de verwerkersovereenkomsten.</p></div>
+          </div>
+          <div class="flex items-center gap-5 p-6 border border-gray-100 rounded-2xl hover:border-accent/20 transition-colors" data-reveal>
+            <div class="w-8 h-8 rounded-xl bg-gray-100 text-sm font-black flex items-center justify-center flex-shrink-0">2</div>
+            <div><h4 class="font-black mb-1">Gebruik betrouwbare AI-tools</h4><p class="text-gray-400 text-sm">Kies tools van gevestigde providers die duidelijke privacy- en beveiligingsbeleiden hanteren.</p></div>
+          </div>
+          <div class="flex items-center gap-5 p-6 border border-gray-100 rounded-2xl hover:border-accent/20 transition-colors" data-reveal>
+            <div class="w-8 h-8 rounded-xl bg-gray-100 text-sm font-black flex items-center justify-center flex-shrink-0">3</div>
+            <div><h4 class="font-black mb-1">Transparantie naar klanten</h4><p class="text-gray-400 text-sm">Informeer klanten wanneer ze communiceren met AI. Voeg dit toe aan je privacyverklaring.</p></div>
+          </div>
+          <div class="flex items-center gap-5 p-6 border border-gray-100 rounded-2xl hover:border-accent/20 transition-colors" data-reveal>
+            <div class="w-8 h-8 rounded-xl bg-gray-100 text-sm font-black flex items-center justify-center flex-shrink-0">4</div>
+            <div><h4 class="font-black mb-1">Train je team</h4><p class="text-gray-400 text-sm">Zorg dat medewerkers weten wat wel en niet mag met AI-tools. Stel een intern AI-beleid op.</p></div>
+          </div>
+          <div class="flex items-center gap-5 p-6 border border-accent/20 bg-red-50/30 rounded-2xl" data-reveal>
+            <div class="w-8 h-8 rounded-xl bg-accent text-white text-sm font-black flex items-center justify-center flex-shrink-0">5</div>
+            <div><h4 class="font-black mb-1">Doe een AI Maturity Scan</h4><p class="text-gray-400 text-sm">Ontdek welke AI-risico's relevant zijn voor jouw specifieke situatie en krijg een gepersonaliseerd advies.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-black text-white rounded-3xl px-12 text-center" data-reveal>
+      <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">Ben jij AI-compliant?</h2>
+      <p class="text-gray-400 mb-10 text-lg">De Maturity Scan geeft je inzicht in jouw AI-risicoprofiel en concrete adviezen.</p>
+      <a href="/src/pages/scan.html" class="inline-flex items-center gap-3 bg-accent text-white px-10 py-5 rounded-pill font-black hover:bg-white hover:text-black transition-all shadow-2xl">
+        Doe de AI Maturity Scan
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
+    </section>
+  </main>
+  <footer id="site-footer">
+    <script>fetch('/src/components/footer.html').then(r=>r.text()).then(h=>document.getElementById('site-footer').innerHTML=h);</script>
+  </footer>
+  <script>
+    (function(){ const obs = new IntersectionObserver(entries => entries.forEach((e,i)=>{ if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('revealed'),i*80); obs.unobserve(e.target); }}),{threshold:0.12}); document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el)); })();
+  </script>
+</body>
+</html>

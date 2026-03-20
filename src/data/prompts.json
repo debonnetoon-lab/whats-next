@@ -1,0 +1,23 @@
+[
+  {
+    "id": "p1",
+    "title": "Klantenservice Bot",
+    "prompt": "Fungeer als een empathische klantenservice medewerker voor een Belgische webshop. Beantwoord de volgende vraag in het Nederlands, formeel maar vriendelijk...",
+    "category": "Customer Support",
+    "tags": ["Support", "NLP"]
+  },
+  {
+    "id": "p2",
+    "title": "Marketing Copywriter",
+    "prompt": "Schrijf een overtuigende LinkedIn post over onze nieuwe AI-dienst. Focus op de voordelen voor KMO's: tijdsbesparing en efficiëntie...",
+    "category": "Marketing",
+    "tags": ["Content", "Social"]
+  },
+  {
+    "id": "p3",
+    "title": "Data Analist",
+    "prompt": "Analyseer de volgende verkoopcijfers van het afgelopen kwartaal. Identificeer trends en geef 3 concrete aanbevelingen voor groei...",
+    "category": "Data",
+    "tags": ["Analytics", "Strategy"]
+  }
+]

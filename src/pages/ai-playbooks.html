@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Playbooks voor KMO's | Whatsnext</title>
+  <meta name="description" content="Stap-voor-stap AI playbooks om AI workflows te bouwen voor marketing, klantenservice, HR, administratie en sales in jouw KMO." />
+  <link rel="stylesheet" href="/src/css/tailwind.css" />
+  <style>
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    .animate-fade-in { animation: fadeInUp 0.6s ease-out forwards; }
+    [data-reveal] { opacity:0; transform:translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    [data-reveal].revealed { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body class="bg-base text-text selection:bg-accent selection:text-white">
+  <header id="site-header">
+    <script>fetch('/src/components/header.html').then(r=>r.text()).then(h=>document.getElementById('site-header').innerHTML=h);</script>
+  </header>
+  <main class="max-w-6xl mx-auto px-6 mb-24">
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-24 mesh-gradient -mt-32 rounded-b-3xl overflow-hidden animate-fade-in">
+      <div class="max-w-4xl mx-auto text-center px-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-pill bg-white/50 border border-white shadow-sm text-accent font-black text-[10px] uppercase tracking-widest mb-8">
+          <span class="flex h-2 w-2 rounded-full bg-accent animate-pulse"></span>Gratis Gidsen
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black leading-[1] tracking-tighter mb-8">
+          AI Playbooks<br/>voor <span class="text-accent italic font-serif font-normal lowercase tracking-normal">KMO's</span>
+        </h1>
+        <p class="text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto mb-12">Stap-voor-stap gidsen om AI workflows te bouwen in jouw bedrijf. Van probleem tot implementatie.</p>
+        <a href="/src/pages/scan.html" class="inline-flex items-center gap-4 bg-black text-white px-8 py-5 rounded-pill font-black hover:scale-105 hover:bg-accent transition-all shadow-2xl">
+          Start jouw AI traject
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Wat is een Playbook -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-pill bg-red-50 text-accent font-black text-[10px] uppercase tracking-widest mb-6">Wat is een playbook?</div>
+          <h2 class="text-4xl font-black tracking-tighter mb-8 leading-tight">Elke playbook = een <span class="text-accent italic font-serif font-normal lowercase tracking-normal">compleet</span> stappenplan</h2>
+          <p class="text-gray-400 text-lg leading-relaxed mb-8">Geen theorie, geen complexe handleidingen. Elke playbook volgt dezelfde bewezen structuur die je direct kan toepassen.</p>
+        </div>
+        <div class="grid grid-cols-1 gap-4">
+          <div class="flex items-center gap-5 p-5 border border-gray-100 rounded-2xl">
+            <div class="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center font-black flex-shrink-0">1</div>
+            <div><h4 class="font-black">Probleem</h4><p class="text-gray-400 text-sm">Welk probleem lost de workflow op?</p></div>
+          </div>
+          <div class="flex items-center gap-5 p-5 border border-gray-100 rounded-2xl">
+            <div class="w-10 h-10 rounded-xl bg-gray-100 text-text flex items-center justify-center font-black flex-shrink-0">2</div>
+            <div><h4 class="font-black">AI Workflow</h4><p class="text-gray-400 text-sm">Hoe ziet de geautomatiseerde flow eruit?</p></div>
+          </div>
+          <div class="flex items-center gap-5 p-5 border border-gray-100 rounded-2xl">
+            <div class="w-10 h-10 rounded-xl bg-gray-100 text-text flex items-center justify-center font-black flex-shrink-0">3</div>
+            <div><h4 class="font-black">Tools</h4><p class="text-gray-400 text-sm">Welke AI-tools heb je nodig?</p></div>
+          </div>
+          <div class="flex items-center gap-5 p-5 border border-gray-100 rounded-2xl">
+            <div class="w-10 h-10 rounded-xl bg-gray-100 text-text flex items-center justify-center font-black flex-shrink-0">4</div>
+            <div><h4 class="font-black">Prompts</h4><p class="text-gray-400 text-sm">Kopieer de exacte prompts die je nodig hebt.</p></div>
+          </div>
+          <div class="flex items-center gap-5 p-5 border border-accent/20 bg-red-50/30 rounded-2xl">
+            <div class="w-10 h-10 rounded-xl bg-accent text-white flex items-center justify-center font-black flex-shrink-0">5</div>
+            <div><h4 class="font-black">Implementatiestappen</h4><p class="text-gray-400 text-sm">Stap voor stap lanceren in jouw bedrijf.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playbook Grid -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-black tracking-tighter mb-4">Kies jouw <span class="text-accent italic font-serif font-normal lowercase tracking-normal">playbook</span></h2>
+        <p class="text-gray-400 text-xl max-w-2xl mx-auto">Elk playbook is beschikbaar na je gratis scan. We sturen je de meest relevante versie.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="border border-gray-100 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:border-accent/20 transition-all duration-300 group flex flex-col" data-reveal>
+          <div class="p-8 bg-black text-white flex-shrink-0">
+            <div class="text-4xl mb-4">📣</div>
+            <h3 class="text-xl font-black">Marketing Automation</h3>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">Automatiseer jouw contentcreatie, social media planning en campagneanalyse met AI. Bereik meer klanten met minder moeite.</p>
+            <ul class="space-y-2 mb-8 text-sm">
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Content genereren in seconden</li>
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Social media scheduler met AI</li>
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Advertentieteksten A/B testen</li>
+            </ul>
+            <a href="/src/pages/scan.html" class="w-full text-center bg-black text-white py-3 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-accent transition-all group-hover:bg-accent">
+              Krijg dit playbook →
+            </a>
+          </div>
+        </div>
+
+        <div class="border border-gray-100 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:border-accent/20 transition-all duration-300 group flex flex-col" data-reveal>
+          <div class="p-8 bg-gray-900 text-white flex-shrink-0">
+            <div class="text-4xl mb-4">💬</div>
+            <h3 class="text-xl font-black">Klantenservice AI</h3>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">Beantwoord klantvragen 24/7 automatisch, escaleer complexe cases naar mensen en verhoog klanttevredenheid.</p>
+            <ul class="space-y-2 mb-8 text-sm">
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Chatbot instellen in 1 dag</li>
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Automatische FAQ-antwoorden</li>
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Sentiment-analyse van feedback</li>
+            </ul>
+            <a href="/src/pages/scan.html" class="w-full text-center bg-black text-white py-3 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-accent transition-all group-hover:bg-accent">
+              Krijg dit playbook →
+            </a>
+          </div>
+        </div>
+
+        <div class="border border-gray-100 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:border-accent/20 transition-all duration-300 group flex flex-col" data-reveal>
+          <div class="p-8 bg-accent text-white flex-shrink-0">
+            <div class="text-4xl mb-4">📋</div>
+            <h3 class="text-xl font-black">Administratie Automatisatie</h3>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">Verwerk facturen, genereer rapporten en categoriseer e-mails automatisch. Bespaar tot 40% van je administratieve tijd.</p>
+            <ul class="space-y-2 mb-8 text-sm">
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Factuurverwerking met AI</li>
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Automatische rapportgeneratie</li>
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> E-mail categorisatie en prioriteit</li>
+            </ul>
+            <a href="/src/pages/scan.html" class="w-full text-center bg-black text-white py-3 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-accent transition-all group-hover:bg-accent">
+              Krijg dit playbook →
+            </a>
+          </div>
+        </div>
+
+        <div class="border border-gray-100 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:border-accent/20 transition-all duration-300 group flex flex-col" data-reveal>
+          <div class="p-8 bg-gray-800 text-white flex-shrink-0">
+            <div class="text-4xl mb-4">👥</div>
+            <h3 class="text-xl font-black">HR met AI</h3>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">Optimaliseer werving, onboarding en personeelsplanning met AI. Vind sneller de juiste mensen en behoud ze beter.</p>
+            <ul class="space-y-2 mb-8 text-sm">
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> CV-screening automatiseren</li>
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Onboarding flow met AI</li>
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Medewerkerstevredenheid meten</li>
+            </ul>
+            <a href="/src/pages/scan.html" class="w-full text-center bg-black text-white py-3 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-accent transition-all group-hover:bg-accent">
+              Krijg dit playbook →
+            </a>
+          </div>
+        </div>
+
+        <div class="border border-gray-100 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:border-accent/20 transition-all duration-300 group flex flex-col" data-reveal>
+          <div class="p-8 bg-gray-700 text-white flex-shrink-0">
+            <div class="text-4xl mb-4">💼</div>
+            <h3 class="text-xl font-black">Sales Acceleration</h3>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">Genereer meer leads, schrijf betere offertes en volg klanten automatisch op met AI-gedreven salesflows.</p>
+            <ul class="space-y-2 mb-8 text-sm">
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Lead scoring met AI</span></li>
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Offertes automatisch genereren</li>
+              <li class="flex items-center gap-2 text-gray-500"><span class="text-accent font-black">✓</span> Opvolgcampagnes personaliseren</li>
+            </ul>
+            <a href="/src/pages/scan.html" class="w-full text-center bg-black text-white py-3 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-accent transition-all group-hover:bg-accent">
+              Krijg dit playbook →
+            </a>
+          </div>
+        </div>
+
+        <!-- More coming -->
+        <div class="border border-dashed border-gray-200 rounded-3xl flex flex-col items-center justify-center text-center p-10" data-reveal>
+          <div class="w-16 h-16 rounded-3xl bg-gray-50 flex items-center justify-center mb-6">
+            <svg class="h-8 w-8 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"/></svg>
+          </div>
+          <h3 class="font-black text-lg mb-3">Meer playbooks binnenkort</h3>
+          <p class="text-gray-400 text-sm mb-6">We werken aan sector-specifieke playbooks voor bouw, retail, zorgsector en meer.</p>
+          <a href="/src/pages/scan.html" class="bg-accent text-white px-6 py-3 rounded-pill font-black text-[10px] uppercase tracking-widest hover:bg-black transition-all">Houd me op de hoogte</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-black text-white rounded-3xl px-12 text-center" data-reveal>
+      <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">Start jouw AI traject<br/>met de maturity scan</h2>
+      <p class="text-gray-400 mb-10 text-lg">Ontdek welk playbook het best past bij jouw KMO. Gratis en in 2 minuten.</p>
+      <a href="/src/pages/scan.html" class="inline-flex items-center gap-3 bg-accent text-white px-10 py-5 rounded-pill font-black hover:bg-white hover:text-black transition-all shadow-2xl">
+        Start de gratis Maturity Scan
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
+    </section>
+
+    <!-- Internal Links -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+        <div class="max-w-md">
+          <h3 class="text-2xl font-black tracking-tighter mb-4">Ga nog verder</h3>
+          <p class="text-gray-400 text-sm">Onze resources helpen je om AI écht in de vingers te krijgen.</p>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a href="/src/pages/prompt-academy.html" class="px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:border-accent transition-all">Prompt Academy</a>
+          <a href="/src/pages/ai-roi-calculator.html" class="px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:border-accent transition-all">ROI Calculator</a>
+          <a href="/src/pages/ai-implementatie.html" class="px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:border-accent transition-all">AI Implementatie</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <script>fetch('/src/components/footer.html').then(r=>r.text()).then(h=>document.getElementById('site-footer').innerHTML=h);</script>
+  </footer>
+  <script>
+    (function(){ const obs = new IntersectionObserver(entries => entries.forEach((e,i)=>{ if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('revealed'),i*80); obs.unobserve(e.target); }}),{threshold:0.12}); document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el)); })();
+  </script>
+</body>
+</html>

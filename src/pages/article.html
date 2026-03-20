@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Article — Whatsnext</title>
+  <link rel="stylesheet" href="/src/css/tailwind.css" />
+</head>
+<body class="bg-base text-text">
+  
+  <header id="site-header">
+    <script>fetch('/src/components/header.html').then(r=>r.text()).then(h=>document.getElementById('site-header').innerHTML=h);</script>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    <a href="/index.html" class="inline-flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-accent transition-colors mb-12 uppercase tracking-widest">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+        Terug naar overzicht
+    </a>
+
+    <div id="article-content-loading" class="animate-pulse">
+        <div class="h-12 bg-gray-100 rounded w-3/4 mb-6"></div>
+        <div class="h-4 bg-gray-50 rounded w-1/4 mb-12"></div>
+        <div class="h-64 bg-gray-50 rounded-xl mb-12"></div>
+    </div>
+
+    <div id="article-root" class="hidden">
+        <header class="mb-12">
+            <div id="article-tags" class="flex gap-2 mb-4"></div>
+            <h1 id="article-title" class="text-4xl md:text-5xl font-black tracking-tighter mb-4" data-acf-field="hero_title"></h1>
+            <p id="article-date" class="text-sm text-gray-400 font-bold uppercase tracking-widest"></p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-2">
+                <!-- TL;DR -->
+                <div id="tldr-root" class="mb-12"></div>
+                
+                <!-- Main Content -->
+                <div id="article-body" class="prose prose-lg max-w-none prose-red prose-headings:font-black" data-acf-field="article_content"></div>
+            </div>
+            
+            <aside class="space-y-8">
+                <div class="p-6 border border-gray-100 rounded-xl bg-gray-50/50">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Gerelateerde bronnen</h4>
+                    <ul id="article-sources" class="space-y-3 text-sm" data-acf-field="article_sources">
+                        <!-- ACF Repeater simulation -->
+                        <li><a href="#" class="font-bold text-accent hover:underline">Whitepaper: AI Implementatie</a></li>
+                        <li><a href="#" class="font-bold text-accent hover:underline">Video Tutorial</a></li>
+                    </ul>
+                </div>
+                
+                <div class="p-6 border border-accent bg-accent text-white rounded-xl shadow-xl shadow-red-200">
+                    <h4 class="text-lg font-bold mb-2">Hulp nodig?</h4>
+                    <p class="text-sm opacity-90 mb-6">Onze experts helpen je graag bij de implementatie van AI in jouw proces.</p>
+                    <button class="w-full bg-white text-accent font-black py-3 rounded-lg hover:bg-black hover:text-white transition-all uppercase tracking-widest text-xs">
+                        Plan een call
+                    </button>
+                </div>
+            </aside>
+        </div>
+    </div>
+  </main>
+
+  <footer id="site-footer">
+    <script>fetch('/src/components/footer.html').then(r=>r.text()).then(h=>document.getElementById('site-footer').innerHTML=h);</script>
+  </footer>
+
+  <script type="module">
+    import { ragRetrieveAndAnswer } from '/src/js/rag-mock.js';
+    
+    document.addEventListener('DOMContentLoaded', async () => {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+        
+        const res = await fetch('/src/data/articles.json');
+        const articles = await res.json();
+        const article = articles.find(a => a.id === id) || articles[0];
+        
+        // Fill data
+        document.getElementById('article-title').innerText = article.title;
+        document.getElementById('article-date').innerText = new Date(article.published_at).toLocaleDateString('nl-BE', {day:'numeric', month:'long', year:'numeric'});
+        document.getElementById('article-tags').innerHTML = article.tags.map(t => `<span class="text-[10px] font-bold text-accent uppercase tracking-widest border border-accent/20 px-2 py-1 rounded">${t}</span>`).join('');
+        document.getElementById('article-body').innerHTML = article.content;
+        
+        // Fetch TLDR component and fill
+        const tldrRes = await fetch('/src/components/tldr-card.html');
+        let tldrHtml = await tldrRes.text();
+        tldrHtml = tldrHtml.replace('Korte samenvatting van maximaal 40 woorden die direct de kern raakt van het artikel of de tool.', article.summary);
+        tldrHtml = tldrHtml.replace(/<li class="flex gap-3">[\s\S]*?<\/li>/g, article.bullets.map(b => `
+            <li class="flex gap-3">
+                <span class="text-accent font-bold">•</span>
+                <span>${b}</span>
+            </li>
+        `).join(''));
+        document.getElementById('tldr-root').innerHTML = tldrHtml;
+        
+        // Show root
+        document.getElementById('article-content-loading').classList.add('hidden');
+        document.getElementById('article-root').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

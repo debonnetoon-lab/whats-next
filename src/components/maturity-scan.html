@@ -1,0 +1,38 @@
+<div class="p-6 border border-gray-100 rounded-lg bg-white shadow-sm">
+  <h3 class="text-xl font-bold mb-4">Whatsnext Maturity Scan</h3>
+  <p class="text-sm text-gray-600 mb-6">Ontdek hoe klaar je KMO is voor de AI-revolutie in 3 vragen.</p>
+  
+  <form id="maturity-form" class="space-y-4">
+    <div>
+      <label class="block text-sm font-medium text-gray-700">1) Gebruik je al digitale tools voor administratie?</label>
+      <select name="q1" class="mt-1 block w-full p-2.5 border border-gray-300 rounded-lg focus:ring-accent focus:border-accent">
+        <option value="0">Nee, alles nog op papier/Excel</option>
+        <option value="1">Gedeeltelijk (bv. online boekhouden)</option>
+        <option value="2">Ja, we zijn volledig gedigitaliseerd</option>
+      </select>
+    </div>
+    
+    <div>
+      <label class="block text-sm font-medium text-gray-700">2) Heeft iemand in je team AI-vaardigheden?</label>
+      <select name="q2" class="mt-1 block w-full p-2.5 border border-gray-300 rounded-lg focus:ring-accent focus:border-accent">
+        <option value="0">Nee, nog niet</option>
+        <option value="1">Enkele basisvaardigheden (ChatGPT basics)</option>
+        <option value="2">Ja, we experimenteren actief met tools</option>
+      </select>
+    </div>
+    
+    <div>
+      <label class="block text-sm font-medium text-gray-700">3) Gebruik je tools met automatisering?</label>
+      <select name="q3" class="mt-1 block w-full p-2.5 border border-gray-300 rounded-lg focus:ring-accent focus:border-accent">
+        <option value="0">Nee</option>
+        <option value="1">Gedeeltelijk (bv. automatische herinneringen)</option>
+        <option value="2">Ja, we gebruiken API's en workflows</option>
+      </select>
+    </div>
+    
+    <button class="w-full mt-6 bg-accent text-white font-bold py-3 px-4 rounded-lg hover:bg-red-700 transition-colors shadow-lg shadow-red-200" type="button" id="maturity-submit">
+      Bekijk mijn AI-score
+    </button>
+  </form>
+  <div id="maturity-result" class="mt-6 hidden"></div>
+</div>

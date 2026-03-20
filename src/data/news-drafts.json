@@ -1,0 +1,16 @@
+[
+  {
+    "id": "nd1",
+    "title": "Nieuwe AI-wetgeving voor KMO's in 2026",
+    "draft_html": "<p>De Europese Unie heeft nieuwe richtlijnen aangekondigd die specifiek gericht zijn op het gebruik van generatieve AI in de administratie van kleine ondernemingen...</p>",
+    "confidence": 92,
+    "sources": ["EU Press Release", "KMO-Gazet"]
+  },
+  {
+    "id": "nd2",
+    "title": "Automatisatie in de logistiek: 5 trends",
+    "draft_html": "<p>Uit onderzoek blijkt dat Vlaamse logistieke KMO's tot 15% op brandstofervaring kunnen besparen door slimme AI-routeplanning...</p>",
+    "confidence": 88,
+    "sources": ["Logistics Today", "Vlerick Study"]
+  }
+]

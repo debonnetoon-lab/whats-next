@@ -1,0 +1,276 @@
+====================================================
+WHATSNEXT 2.0 — PROJECTOVERZICHT
+Bijgewerkt: 10 maart 2026
+====================================================
+
+
+WAAR STAAT ALLES OP DE MACBOOK?
+--------------------------------
+
+Website (het prototype):
+/Users/toondebonne/.gemini/antigravity/scratch/whatsnext-prototype/
+
+AI-documenten (plannen, walkthroughs):
+/Users/toondebonne/.gemini/antigravity/brain/55103b95-22e3-4c39-90ed-5e4b66847181/
+
+De site is live op: http://localhost:3000
+
+
+====================================================
+BESTANDSSTRUCTUUR
+====================================================
+
+whatsnext-prototype/
+|
+|-- index.html                     Homepage (alle secties)
+|-- tailwind.config.js             Design tokens (kleuren, fonts)
+|-- Whatsnext-Projectoverzicht.txt <-- DIT BESTAND
+|
+|-- public/images/                 Alle editorial foto's
+|   |-- hero-editorial.png
+|   |-- vision-editorial.png
+|   |-- trust-editorial.png
+|   |-- case-editorial.png
+|   |-- intelligence-editorial.png
+|   |-- prompt-editorial.png
+|
+|-- src/
+    |-- pages/
+    |   |-- scan.html              Maturity Scan (BEVROREN)
+    |   |
+    |   |  --- BATCH 1: Strategie & Implementatie ---
+    |   |-- ai-strategie-kmo.html      AI Strategie voor KMO's
+    |   |-- ai-roi-calculator.html     AI ROI Calculator (werkend)
+    |   |-- ai-voor-bouwbedrijven.html AI voor Bouwbedrijven
+    |   |-- ai-tools-vergeleken.html   AI Tools Vergelijking + tabel
+    |   |-- ai-playbooks.html          AI Playbooks (5 kaarten)
+    |   |
+    |   |  --- BATCH 2: Leren & Tools ---
+    |   |-- ai-wetgeving-belgie.html   EU AI Act & GDPR gids
+    |   |-- prompt-academy.html        Prompt Engineering opleiding
+    |   |-- ai-trends-belgie.html      AI Trends 2025-2027
+    |   |-- ai-implementatie-kmo.html  Implementatie stappenplan
+    |   |-- resources.html             Centrale Resources Hub
+    |
+    |-- components/
+    |   |-- header.html            Navigatie (mega-dropdown met alle 10 pagina's)
+    |   |-- footer.html            Footer (mesh gradient)
+    |
+    |-- js/
+    |   |-- app.js                 Alle dynamische logica
+    |   |-- rag-mock.js            "Ask Whatsnext AI" mock
+    |   |-- maturity-scan.js       Scan logica
+    |
+    |-- css/
+    |   |-- tailwind.css           Globale stijlen + Google Fonts
+    |
+    |-- data/
+        |-- tools.json             4 AI-tools
+        |-- articles.json          3 artikelen
+        |-- cases.json             2 KMO cases
+        |-- prompts.json           3 Prompt Vault prompts
+        |-- news-drafts.json       Newsroom mock data
+
+
+====================================================
+ALLE PAGINA'S EN URL'S
+====================================================
+
+Homepage
+  http://localhost:3000/index.html
+
+Scan (bevroren)
+  http://localhost:3000/src/pages/scan.html
+
+--- BATCH 1: Strategie & Implementatie ---
+
+AI Strategie voor KMO's
+  http://localhost:3000/src/pages/ai-strategie-kmo.html
+  Inhoud: 5-stappen roadmap, use cases per afdeling, statistieken
+
+AI ROI Calculator
+  http://localhost:3000/src/pages/ai-roi-calculator.html
+  Inhoud: Werkende calculator (medewerkers, uurloon, uren, budget)
+  Output: jaarlijkse admin-besparing + marketing ROI
+
+AI voor Bouwbedrijven
+  http://localhost:3000/src/pages/ai-voor-bouwbedrijven.html
+  Inhoud: uitdagingen, 4 AI-oplossingen, case study (40% reductie)
+
+AI Tools Vergeleken
+  http://localhost:3000/src/pages/ai-tools-vergeleken.html
+  Inhoud: 5 tool-categorieën, vergelijkingstabel met scores
+
+AI Playbooks
+  http://localhost:3000/src/pages/ai-playbooks.html
+  Inhoud: 5 playbook-kaarten (Marketing, Klantenservice, Admin, HR, Sales)
+
+--- BATCH 2: Leren & Tools ---
+
+AI Wetgeving België
+  http://localhost:3000/src/pages/ai-wetgeving-belgie.html
+  Inhoud: EU AI Act tijdslijn, GDPR, beveiligingsregels, compliance checklist
+
+Prompt Academy
+  http://localhost:3000/src/pages/prompt-academy.html
+  Inhoud: 4 prompt frameworks, goed vs slecht voorbeeld, veelgemaakte fouten
+
+AI Trends België
+  http://localhost:3000/src/pages/ai-trends-belgie.html
+  Inhoud: 5 AI-trends, impact op KMO's, 3 praktische tips
+
+AI Implementatie voor KMO's
+  http://localhost:3000/src/pages/ai-implementatie-kmo.html
+  Inhoud: 5 stappen + tijdlijn, veelgemaakte fouten, verwachte resultaten
+
+Resources Hub
+  http://localhost:3000/src/pages/resources.html
+  Inhoud: centrale hub met alle pagina's gelinkt per categorie
+
+
+====================================================
+NAVIGATIE — MEGA-DROPDOWN MENU
+====================================================
+
+De header heeft een dropdown "Gidsen" met 2 kolommen:
+
+Kolom 1: Strategie & Implementatie
+  - AI Strategie KMO
+  - AI Implementatie
+  - ROI Calculator
+  - AI voor Bouwbedrijven
+  - AI Wetgeving
+
+Kolom 2: Leren & Tools
+  - AI Tools Vergeleken
+  - AI Playbooks
+  - Prompt Academy
+  - AI Trends België
+  - Resources Hub
+
+Mobiel: hamburger menu met alle 5 links
+
+
+====================================================
+INTERNE LINKS TUSSEN PAGINA'S
+====================================================
+
+Homepage      --> scan.html (meerdere CTA's)
+                  ai-strategie-kmo.html
+                  ai-playbooks.html
+
+ai-strategie  --> scan.html
+                  ai-playbooks.html
+
+ai-roi        --> scan.html
+
+ai-bouw       --> scan.html
+
+ai-tools      --> scan.html
+
+ai-playbooks  --> scan.html (per playbook-kaart)
+
+ai-wetgeving  --> scan.html
+
+prompt-academy--> scan.html, index.html (Prompt Vault)
+
+ai-trends     --> scan.html
+
+ai-implementatie -> scan.html
+
+resources     --> scan.html
+                  ai-strategie-kmo.html
+                  ai-roi-calculator.html
+                  ai-trends-belgie.html
+                  ai-wetgeving-belgie.html
+                  prompt-academy.html
+                  ai-playbooks.html
+                  ai-tools-vergeleken.html
+                  index.html (Cases, Prompts)
+
+
+====================================================
+WAT IS ER GEBOUWD?
+====================================================
+
+1. PROTOTYPE BASIS
+   - Volledige HTML/Tailwind website met Vite dev server
+   - 12 pagina's totaal (homepage + scan + 10 SEO-pagina's)
+   - Dynamische grids via fetch() + JSON databestanden
+   - Component-loading voor header en footer
+
+2. AI MOCK FEATURES
+   - Ask Whatsnext AI: zoekt artikelen op trefwoord, genereert antwoord
+   - Maturity Scan: 3 vragen, berekent score, toont resultaat + advies
+   - Prompt Vault: klik om prompt te kopieren naar klembord
+   - ROI Calculator: berekent jaarlijkse besparing op basis van inputs
+
+3. VISUELE RESKIN (SaaS-stijl)
+   - Floating pill header met glassmorphism
+   - Mesh gradient hero (zachte kleurverlopen)
+   - Inter + Playfair Display typografie mix
+   - Rounded-3xl cards met hover-effecten
+   - Premium mesh gradient footer
+
+4. HOMEPAGE EXTRA SECTIES
+   Hero:               Mesh gradient, AI command bar, Scan CTA
+   Trust / Credibility: Grote editorial foto + 3 stat-kaarten
+   Intelligence Engine: 5-stappen procesdiagram (Scan>Tools>Prompts>Cases>Impl.)
+   Vision:             2-kolom: editorial beeld + missie bullets
+   AI Tool Curator:    Grid van 4 geteste AI-tools (dynamisch)
+   Intelligence Hub:   2 artikelen met editorial foto's (dynamisch)
+   Case Library:       2 KMO cases met editorial foto's (dynamisch)
+   Prompt Vault:       3 kopieerbare AI-prompts (dynamisch)
+   How it Works:       3-stappen uitleg
+   Final CTA:          Zwarte sectie: scan + gesprek knoppen
+
+5. SEO OPTIMALISATIE (alle 10 nieuwe pagina's)
+   - Nederlandstalige <title> tags
+   - <meta description> per pagina
+   - Correcte H1/H2 structuur
+   - Interne links tussen relevante pagina's
+   - Lazy loading voor images
+
+6. SCROLL REVEAL ANIMATIES
+   - Lichtgewicht IntersectionObserver (12 regels JS)
+   - Alle secties: fade-in + omhoog schuiven bij scrollen
+
+
+====================================================
+SCAN PAGINA --- BEVROREN (NIET MEER WIJZIGEN)
+====================================================
+
+Bestand: src/pages/scan.html
+Status: GOEDGEKEURD EN BEVROREN
+
+Inhoud:
+- 2/3 links:  Maturity Scan (3 vragen, directe score + advies)
+- 1/3 rechts: Waarom Whatsnext? (5 redenen om te kiezen)
+- CTA knop:   "Plan je gesprek in" (link naar Calendly)
+
+
+====================================================
+WORDPRESS CONVERSIE TODO
+====================================================
+
+Bestand: wordpress-elementor-widget-todo.txt
+Locatie: in de hoofdmap van het project
+
+Bevat stappen voor de omzetting naar WordPress + Elementor.
+
+
+====================================================
+HOW TO: SERVER STARTEN
+====================================================
+
+Als de server gestopt is, open Terminal en typ:
+
+  cd /Users/toondebonne/.gemini/antigravity/scratch/whatsnext-prototype
+  npm run dev
+
+De site is dan beschikbaar op: http://localhost:3000
+
+
+====================================================
+EINDE DOCUMENT
+====================================================

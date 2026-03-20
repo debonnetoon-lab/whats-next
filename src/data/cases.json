@@ -1,0 +1,16 @@
+[
+  {
+    "id": "c1",
+    "title": "Bouwbedrijf reduceert planningstijd met 40%",
+    "sector": "Bouw & Constructie",
+    "summary": "Door de AI-planningstool te implementeren, bespaart dit bedrijf wekelijks 12 uur aan administratie.",
+    "metrics": ["40% minder fouten", "12u/week besparing"]
+  },
+  {
+    "id": "c2",
+    "title": "Accountancykantoor automatiseert facturatie",
+    "sector": "Zakelijke Dienstverlening",
+    "summary": "Met een custom GPT-oplossing worden inkomende facturen nu automatisch gecategoriseerd en verwerkt.",
+    "metrics": ["95% nauwkeurigheid", "Directe ROI"]
+  }
+]

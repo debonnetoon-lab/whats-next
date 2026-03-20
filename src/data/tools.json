@@ -1,0 +1,34 @@
+[
+  {
+    "id": "t1",
+    "name": "Facturatie AI Helper",
+    "short": "Budgetvriendelijke automatisering voor inkomende facturen.",
+    "kmo_score": 92,
+    "pricing": "€",
+    "use_cases": ["finance", "matching"]
+  },
+  {
+    "id": "t2",
+    "name": "Zapier Central",
+    "short": "AI-gestuurde agents die je gehele workflow automatiseren.",
+    "kmo_score": 88,
+    "pricing": "€€",
+    "use_cases": ["workflow", "sales"]
+  },
+  {
+    "id": "t3",
+    "name": "CopySmith KMO",
+    "short": "Content creatie die écht verkoopt, specifiek voor de Belgische markt.",
+    "kmo_score": 95,
+    "pricing": "€",
+    "use_cases": ["marketing", "social"]
+  },
+  {
+    "id": "t4",
+    "name": "CustomerSense",
+    "short": "Analyseer klantfeedback en sentiment in realtime met AI.",
+    "kmo_score": 82,
+    "pricing": "€€",
+    "use_cases": ["support", "data"]
+  }
+]

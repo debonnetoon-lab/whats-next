@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Resources voor KMO's | Whatsnext</title>
+  <meta name="description" content="Centrale hub voor AI-kennis en tools voor Belgische KMO's. Guides, playbooks, cases, prompts en AI-tools op één plek." />
+  <link rel="stylesheet" href="/src/css/tailwind.css" />
+  <style>
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    .animate-fade-in { animation: fadeInUp 0.6s ease-out forwards; }
+    [data-reveal] { opacity:0; transform:translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    [data-reveal].revealed { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body class="bg-base text-text selection:bg-accent selection:text-white">
+  <header id="site-header">
+    <script>fetch('/src/components/header.html').then(r=>r.text()).then(h=>document.getElementById('site-header').innerHTML=h);</script>
+  </header>
+  <main class="max-w-6xl mx-auto px-6 mb-24">
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-24 mesh-gradient -mt-32 rounded-b-3xl overflow-hidden animate-fade-in">
+      <div class="max-w-4xl mx-auto text-center px-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-pill bg-white/50 border border-white shadow-sm text-accent font-black text-[10px] uppercase tracking-widest mb-8">
+          <span class="flex h-2 w-2 rounded-full bg-accent animate-pulse"></span>Kennishub
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black leading-[1] tracking-tighter mb-8">
+          AI Resources<br/>voor <span class="text-accent italic font-serif font-normal lowercase tracking-normal">KMO's</span>
+        </h1>
+        <p class="text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto mb-12">Alles wat je nodig hebt om AI te begrijpen en te implementeren — op één plek, gratis toegankelijk.</p>
+        <a href="/src/pages/scan.html" class="inline-flex items-center gap-4 bg-black text-white px-8 py-5 rounded-pill font-black hover:scale-105 hover:bg-accent transition-all shadow-2xl">
+          Start jouw AI traject
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Resource categorieën -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-black tracking-tighter mb-4">Alle <span class="text-accent italic font-serif font-normal lowercase tracking-normal">resources</span> op een rij</h2>
+        <p class="text-gray-400 text-xl max-w-2xl mx-auto">Georganiseerd per type zodat je snel vindt wat je nodig hebt.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <a href="/src/pages/ai-strategie-kmo.html" class="group p-8 border border-gray-100 rounded-3xl hover:-translate-y-2 hover:shadow-2xl hover:border-accent/20 transition-all duration-300 flex flex-col" data-reveal>
+          <div class="w-14 h-14 rounded-2xl bg-black text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-accent transition-colors">🗺️</div>
+          <h3 class="font-black text-xl mb-3 group-hover:text-accent transition-colors">AI Guides</h3>
+          <p class="text-gray-400 text-sm leading-relaxed flex-grow">Diepgaande gidsen over AI-strategie, implementatie, wetgeving en sector-specifieke toepassingen.</p>
+          <div class="mt-6 flex gap-2 flex-wrap">
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">AI Strategie</span>
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">AI Wetgeving</span>
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">AI Trends</span>
+          </div>
+        </a>
+
+        <a href="/src/pages/ai-tools-vergeleken.html" class="group p-8 border border-gray-100 rounded-3xl hover:-translate-y-2 hover:shadow-2xl hover:border-accent/20 transition-all duration-300 flex flex-col" data-reveal>
+          <div class="w-14 h-14 rounded-2xl bg-black text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-accent transition-colors">⚖️</div>
+          <h3 class="font-black text-xl mb-3 group-hover:text-accent transition-colors">AI Tools</h3>
+          <p class="text-gray-400 text-sm leading-relaxed flex-grow">Onafhankelijke vergelijkingen en reviews van AI-tools specifiek geselecteerd voor Belgische KMO's.</p>
+          <div class="mt-6 flex gap-2 flex-wrap">
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">Marketing</span>
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">Automatisatie</span>
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">Analyse</span>
+          </div>
+        </a>
+
+        <a href="/src/pages/ai-playbooks.html" class="group p-8 border border-gray-100 rounded-3xl hover:-translate-y-2 hover:shadow-2xl hover:border-accent/20 transition-all duration-300 flex flex-col" data-reveal>
+          <div class="w-14 h-14 rounded-2xl bg-accent text-white flex items-center justify-center text-2xl mb-6">📘</div>
+          <h3 class="font-black text-xl mb-3 group-hover:text-accent transition-colors">Playbooks</h3>
+          <p class="text-gray-400 text-sm leading-relaxed flex-grow">Stap-voor-stap AI-workflows voor elke afdeling. Van marketing tot HR, inclusief tools en prompts.</p>
+          <div class="mt-6 flex gap-2 flex-wrap">
+            <span class="text-[10px] font-black bg-red-50 text-accent px-3 py-1.5 rounded-lg">Marketing</span>
+            <span class="text-[10px] font-black bg-red-50 text-accent px-3 py-1.5 rounded-lg">Sales</span>
+            <span class="text-[10px] font-black bg-red-50 text-accent px-3 py-1.5 rounded-lg">Admin</span>
+          </div>
+        </a>
+
+        <a href="/index.html#cases-grid" class="group p-8 border border-gray-100 rounded-3xl hover:-translate-y-2 hover:shadow-2xl hover:border-accent/20 transition-all duration-300 flex flex-col" data-reveal>
+          <div class="w-14 h-14 rounded-2xl bg-black text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-accent transition-colors">📊</div>
+          <h3 class="font-black text-xl mb-3 group-hover:text-accent transition-colors">Cases</h3>
+          <p class="text-gray-400 text-sm leading-relaxed flex-grow">Echte verhalen van Belgische KMO's die AI succesvol implementeerden — met concrete resultaten en lessen.</p>
+          <div class="mt-6 flex gap-2 flex-wrap">
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">Bouw</span>
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">Retail</span>
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">Services</span>
+          </div>
+        </a>
+
+        <a href="/index.html#prompts-grid" class="group p-8 border border-gray-100 rounded-3xl hover:-translate-y-2 hover:shadow-2xl hover:border-accent/20 transition-all duration-300 flex flex-col" data-reveal>
+          <div class="w-14 h-14 rounded-2xl bg-black text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-accent transition-colors">💬</div>
+          <h3 class="font-black text-xl mb-3 group-hover:text-accent transition-colors">Prompts</h3>
+          <p class="text-gray-400 text-sm leading-relaxed flex-grow">Geteste en bewezen prompt-templates voor de meest voorkomende bedrijfstaken. Kopieer en gebruik direct.</p>
+          <div class="mt-6 flex gap-2 flex-wrap">
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">E-mail</span>
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">Analyse</span>
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">Content</span>
+          </div>
+        </a>
+
+        <a href="/src/pages/ai-roi-calculator.html" class="group p-8 border border-gray-100 rounded-3xl hover:-translate-y-2 hover:shadow-2xl hover:border-accent/20 transition-all duration-300 flex flex-col" data-reveal>
+          <div class="w-14 h-14 rounded-2xl bg-black text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-accent transition-colors">🧮</div>
+          <h3 class="font-black text-xl mb-3 group-hover:text-accent transition-colors">Tools & Calculators</h3>
+          <p class="text-gray-400 text-sm leading-relaxed flex-grow">Interactieve tools zoals de ROI Calculator om de potentiële waarde van AI voor jouw bedrijf te berekenen.</p>
+          <div class="mt-6 flex gap-2 flex-wrap">
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">ROI Calculator</span>
+            <span class="text-[10px] font-black bg-gray-100 px-3 py-1.5 rounded-lg">Maturity Scan</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Laatste guides grid -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="flex items-center justify-between mb-12">
+        <h2 class="text-3xl font-black tracking-tighter">Recente <span class="text-accent italic font-serif font-normal lowercase tracking-normal">gidsen</span></h2>
+        <a href="/src/pages/ai-strategie-kmo.html" class="text-[10px] font-black uppercase tracking-widest hover:text-accent transition-colors flex items-center gap-2">
+          Alle gidsen <svg class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/src/pages/ai-strategie-kmo.html" class="group border border-gray-100 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-reveal>
+          <div class="h-3 bg-black group-hover:bg-accent transition-colors"></div>
+          <div class="p-7">
+            <span class="text-[10px] font-black uppercase tracking-widest text-accent">Strategie</span>
+            <h3 class="font-black text-lg mt-2 mb-3 leading-tight">AI Strategie voor Belgische KMO's</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Een praktische roadmap om AI stap voor stap te integreren in jouw bedrijf.</p>
+          </div>
+        </a>
+        <a href="/src/pages/ai-roi-calculator.html" class="group border border-gray-100 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-reveal>
+          <div class="h-3 bg-gray-800 group-hover:bg-accent transition-colors"></div>
+          <div class="p-7">
+            <span class="text-[10px] font-black uppercase tracking-widest text-accent">Tool</span>
+            <h3 class="font-black text-lg mt-2 mb-3 leading-tight">AI ROI Calculator voor KMO's</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Bereken hoeveel jouw bedrijf kan besparen met AI in minder dan 2 minuten.</p>
+          </div>
+        </a>
+        <a href="/src/pages/ai-trends-belgie.html" class="group border border-gray-100 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-reveal>
+          <div class="h-3 bg-gray-600 group-hover:bg-accent transition-colors"></div>
+          <div class="p-7">
+            <span class="text-[10px] font-black uppercase tracking-widest text-accent">Trends</span>
+            <h3 class="font-black text-lg mt-2 mb-3 leading-tight">AI Trends voor Belgische KMO's</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Welke AI-ontwikkelingen jouw bedrijf de komende jaren zullen beïnvloeden.</p>
+          </div>
+        </a>
+        <a href="/src/pages/ai-wetgeving-belgie.html" class="group border border-gray-100 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-reveal>
+          <div class="h-3 bg-gray-500 group-hover:bg-accent transition-colors"></div>
+          <div class="p-7">
+            <span class="text-[10px] font-black uppercase tracking-widest text-accent">Regelgeving</span>
+            <h3 class="font-black text-lg mt-2 mb-3 leading-tight">AI Wetgeving voor Belgische KMO's</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Wat je moet weten over de EU AI Act, GDPR en verantwoord AI-gebruik.</p>
+          </div>
+        </a>
+        <a href="/src/pages/prompt-academy.html" class="group border border-gray-100 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-reveal>
+          <div class="h-3 bg-gray-400 group-hover:bg-accent transition-colors"></div>
+          <div class="p-7">
+            <span class="text-[10px] font-black uppercase tracking-widest text-accent">Opleiding</span>
+            <h3 class="font-black text-lg mt-2 mb-3 leading-tight">Prompt Academy</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Leer hoe je effectieve AI-prompts schrijft met bewezen frameworks.</p>
+          </div>
+        </a>
+        <a href="/src/pages/ai-playbooks.html" class="group border border-gray-100 rounded-3xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300" data-reveal>
+          <div class="h-3 bg-accent group-hover:bg-black transition-colors"></div>
+          <div class="p-7">
+            <span class="text-[10px] font-black uppercase tracking-widest text-accent">Playbooks</span>
+            <h3 class="font-black text-lg mt-2 mb-3 leading-tight">AI Playbooks voor KMO's</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Stap-voor-stap gidsen om AI-workflows te bouwen in jouw bedrijf.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-black text-white rounded-3xl px-12 text-center" data-reveal>
+      <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">Start jouw AI traject<br/>met de Maturity Scan</h2>
+      <p class="text-gray-400 mb-10 text-lg">Ontvang na de scan een gepersonaliseerde resourcelijst op maat van jouw KMO.</p>
+      <a href="/src/pages/scan.html" class="inline-flex items-center gap-3 bg-accent text-white px-10 py-5 rounded-pill font-black hover:bg-white hover:text-black transition-all shadow-2xl">
+        Start de gratis Maturity Scan
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
+    </section>
+  </main>
+  <footer id="site-footer">
+    <script>fetch('/src/components/footer.html').then(r=>r.text()).then(h=>document.getElementById('site-footer').innerHTML=h);</script>
+  </footer>
+  <script>
+    (function(){ const obs = new IntersectionObserver(entries => entries.forEach((e,i)=>{ if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('revealed'),i*80); obs.unobserve(e.target); }}),{threshold:0.12}); document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el)); })();
+  </script>
+</body>
+</html>

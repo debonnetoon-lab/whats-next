@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Strategie Traject | Whatsnext Consultancy</title>
+  <meta name="description" content="Een integraal AI-strategie traject voor Belgische KMO's. Van nul naar een concrete AI-roadmap in 4 weken." />
+  <link rel="stylesheet" href="/src/css/tailwind.css" />
+  <style>
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    .animate-fade-in { animation: fadeInUp 0.6s ease-out forwards; }
+    [data-reveal] { opacity:0; transform:translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    [data-reveal].revealed { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body class="bg-base text-text selection:bg-accent selection:text-white">
+
+  <header id="site-header">
+    <script>fetch('/src/components/header.html').then(r=>r.text()).then(h=>document.getElementById('site-header').innerHTML=h);</script>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 mb-24">
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-24 mesh-gradient-red -mt-32 rounded-b-[64px] overflow-hidden animate-fade-in text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/50 border border-white shadow-sm text-accent font-black text-[10px] uppercase tracking-widest mb-8">
+          <span class="flex h-2 w-2 rounded-full bg-accent animate-pulse"></span>
+          Consultancy Traject
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black leading-[1.1] tracking-tighter mb-8">
+          Van nul naar een <br/><span class="text-accent italic font-serif font-normal lowercase tracking-normal">win-win</span> AI-strategie
+        </h1>
+        <p class="text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto mb-12">
+          Wij helpen Belgische KMO's om de ruis van AI te filteren en te focussen op de toepassingen die écht rendement opleveren.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://calendly.com/hallo-whats-next/30min" target="_blank" class="inline-flex items-center gap-4 bg-black text-white px-8 py-4 rounded-full font-black hover:scale-105 hover:bg-accent transition-all shadow-2xl">
+            Plan een strategiegesprek
+          </a>
+          <a href="/src/pages/scan.html" class="inline-flex items-center gap-4 border border-gray-200 px-8 py-4 rounded-full font-black hover:bg-white transition-all text-[10px] uppercase tracking-widest">
+            Doe eerst de scan
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wat we doen -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-4xl font-black tracking-tighter mb-8">Wat we doen</h2>
+          <p class="text-gray-500 text-lg leading-relaxed mb-8">
+            Een AI-strategie traject bij Whatsnext is geen theoretisch rapport. Het is een actieplan dat direct impact heeft op jouw bedrijfsvoering.
+          </p>
+          <div class="space-y-6">
+            <div class="flex gap-4 p-6 bg-white border border-gray-100 rounded-3xl shadow-sm">
+              <span class="text-2xl">🧠</span>
+              <div>
+                <h4 class="font-black text-lg mb-1">Maturity Assessment</h4>
+                <p class="text-gray-400 text-sm">We brengen de huidige digitale volwassenheid en data-bereidheid van je team in kaart.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 p-6 bg-white border border-gray-100 rounded-3xl shadow-sm">
+              <span class="text-2xl">💡</span>
+              <div>
+                <h4 class="font-black text-lg mb-1">Use Case Discovery</h4>
+                <p class="text-gray-400 text-sm">Samen identificeren we de top 5 processen waar AI de hoogste ROI kan genereren.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-square bg-gray-50 rounded-[64px] overflow-hidden border border-gray-100 relative">
+            <div class="absolute inset-0 bg-gradient-to-tr from-accent/5 to-transparent"></div>
+            <div class="p-12 h-full flex flex-col justify-center">
+              <div class="space-y-4">
+                <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div class="w-1/3 h-full bg-accent animate-[pulse_3s_infinite]"></div>
+                </div>
+                <div class="w-3/4 h-2 bg-gray-200 rounded-full"></div>
+                <div class="w-5/6 h-2 bg-gray-200 rounded-full"></div>
+              </div>
+              <div class="mt-12 p-8 bg-white rounded-3xl shadow-xl border border-gray-100">
+                <p class="text-accent font-black text-3xl mb-1">94%</p>
+                <p class="text-gray-400 text-xs font-black uppercase tracking-widest leading-none">Implementatie Ratio</p>
+                <p class="text-gray-500 text-[10px] mt-4">Onze roadmaps blijven niet in de schuif liggen, maar worden effectief uitgevoerd.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hoe het werkt -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-black tracking-tighter mb-4">Hoe het werkt</h2>
+        <p class="text-gray-500 max-w-2xl mx-auto">Ons traject duurt gemiddeld 4 weken en volgt een strak proces.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="relative p-8 bg-white border border-gray-100 rounded-3xl shadow-sm" data-reveal>
+          <div class="w-10 h-10 bg-black text-white flex items-center justify-center rounded-xl font-black mb-6">1</div>
+          <h3 class="font-black mb-2">Audit</h3>
+          <p class="text-gray-400 text-sm">Diepte-interviews met stakeholders en data-analyse.</p>
+        </div>
+        <div class="relative p-8 bg-white border border-gray-100 rounded-3xl shadow-sm" data-reveal>
+          <div class="w-10 h-10 bg-gray-100 text-black flex items-center justify-center rounded-xl font-black mb-6">2</div>
+          <h3 class="font-black mb-2">Discovery</h3>
+          <p class="text-gray-400 text-sm">Workshop om laaghangend fruit en lange-termijn doelen te matchen.</p>
+        </div>
+        <div class="relative p-8 bg-white border border-gray-100 rounded-3xl shadow-sm" data-reveal>
+          <div class="w-10 h-10 bg-gray-100 text-black flex items-center justify-center rounded-xl font-black mb-6">3</div>
+          <h3 class="font-black mb-2">Roadmap</h3>
+          <p class="text-gray-400 text-sm">Documentatie van tools, budgetten en tijdlijnen.</p>
+        </div>
+        <div class="relative p-8 bg-accent text-white rounded-3xl shadow-xl" data-reveal>
+          <div class="w-10 h-10 bg-white/20 flex items-center justify-center rounded-xl font-black mb-6">4</div>
+          <h3 class="font-black mb-2 text-white">Execution</h3>
+          <p class="text-white/80 text-sm">Opstart van het eerste pilot-project met ons implementatieteam.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resultaten -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="bg-black rounded-[48px] p-12 lg:p-24 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-accent/10 blur-[120px] rounded-full"></div>
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-8 italic font-serif leading-tight">Resultaten voor <br/>jouw bedrijf</h2>
+            <div class="grid grid-cols-2 gap-8">
+              <div>
+                <p class="text-accent text-4xl font-black mb-2">+35%</p>
+                <p class="text-gray-400 text-xs font-black uppercase tracking-widest">Productiviteit</p>
+              </div>
+              <div>
+                <p class="text-accent text-4xl font-black mb-2">-20%</p>
+                <p class="text-gray-400 text-xs font-black uppercase tracking-widest">Operationele Kosten</p>
+              </div>
+              <div>
+                <p class="text-accent text-4xl font-black mb-2">2 Mnd</p>
+                <p class="text-gray-400 text-xs font-black uppercase tracking-widest">Payback Period</p>
+              </div>
+              <div>
+                <p class="text-accent text-4xl font-black mb-2">100%</p>
+                <p class="text-gray-400 text-xs font-black uppercase tracking-widest">Compliance</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 border border-white/10 rounded-3xl bg-white/5 backdrop-blur-sm">
+            <p class="text-lg italic leading-relaxed mb-6">"Dankzij het traject met Whatsnext wisten we exact welke AI-tools we moesten kiezen. Geen gokwerk meer, maar een duidelijk plan."</p>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-accent/20"></div>
+              <div>
+                <p class="font-black text-sm uppercase tracking-widest">Jan Peeters</p>
+                <p class="text-gray-500 text-[10px]">CEO, Peeters Construct</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 text-center" data-reveal>
+      <h2 class="text-3xl md:text-5xl font-black mb-8">Klaar voor de volgende stap?</h2>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <a href="https://calendly.com/hallo-whats-next/30min" target="_blank" class="bg-black text-white px-10 py-5 rounded-full font-black hover:bg-accent transition-all shadow-xl">
+          Plan een strategiegesprek
+        </a>
+        <a href="/src/pages/scan.html" class="text-text font-black text-[10px] uppercase tracking-widest border-b-2 border-accent hover:border-black transition-all">
+          Of doe eerst de Maturity Scan
+        </a>
+      </div>
+    </section>
+
+    <!-- Internal Links Section -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <h3 class="text-2xl font-black mb-12 tracking-tighter">Verdiep je in AI</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        <a href="/src/pages/ai-tools-vergeleken.html" class="group p-6 bg-white border border-gray-100 rounded-3xl hover:border-accent transition-all">
+          <span class="text-2xl mb-4 block">🛠️</span>
+          <h4 class="font-black mb-2 group-hover:text-accent transition-all">AI Tools Vergeleken</h4>
+          <p class="text-gray-400 text-xs">Welke tools passen bij jouw specifieke sector?</p>
+        </a>
+        <a href="/src/pages/ai-playbooks.html" class="group p-6 bg-white border border-gray-100 rounded-3xl hover:border-accent transition-all">
+          <span class="text-2xl mb-4 block">📚</span>
+          <h4 class="font-black mb-2 group-hover:text-accent transition-all">AI Playbooks</h4>
+          <p class="text-gray-400 text-xs">Stap-voor-stap gidsen voor jouw team.</p>
+        </a>
+        <a href="/src/pages/ai-implementatie.html" class="group p-6 bg-white border border-gray-100 rounded-3xl hover:border-accent transition-all">
+          <span class="text-2xl mb-4 block">🚀</span>
+          <h4 class="font-black mb-2 group-hover:text-accent transition-all">AI Implementatie</h4>
+          <p class="text-gray-400 text-xs">Van strategie naar werkende software.</p>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer">
+    <script>fetch('/src/components/footer.html').then(r=>r.text()).then(h=>document.getElementById('site-footer').innerHTML=h);</script>
+  </footer>
+
+  <script>
+    (function(){
+      const obs = new IntersectionObserver(entries => entries.forEach((e,i) => { if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('revealed'), i*80); obs.unobserve(e.target); }}), {threshold:0.12});
+      document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
+    })();
+  </script>
+</body>
+</html>

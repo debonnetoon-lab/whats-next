@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Maturity Scan voor KMO's — Ontdek je AI-Potentieel | Whatsnext</title>
+<meta name="description" content="Doe de gratis AI Maturity Scan en ontdek hoe klaar jouw KMO is voor kunstmatige intelligentie. Ontvang direct advies en inzichten in 2 minuten." />
+  <link rel="stylesheet" href="/src/css/tailwind.css" />
+</head>
+<body class="bg-base text-text">
+  
+  <header id="site-header">
+    <script>fetch('/src/components/header.html').then(r=>r.text()).then(h=>document.getElementById('site-header').innerHTML=h);</script>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-16">
+    <div class="mb-12">
+        <h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-4" data-acf-field="hero_title">AI praktisch voor je KMO</h1>
+        <p class="text-xl text-gray-500 leading-relaxed max-w-2xl">
+            Ontdek je AI-volwassenheid in 2 minuten en ontvang direct bruikbaar advies voor jouw specifieke situatie.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <!-- Scan Widget Column -->
+        <div class="lg:col-span-2">
+            <div id="maturity-scan-root" class="bg-white p-8 rounded-xl border border-gray-100 shadow-xl">
+                <!-- Loaded from maturity-scan.js -->
+            </div>
+            
+            <div id="scan-explanation" class="mt-16 space-y-12">
+                <section>
+                    <h2 class="text-2xl font-black mb-6">Wat betekent je score?</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="p-6 border border-gray-100 rounded-xl bg-gray-50/50">
+                            <span class="text-sm font-bold text-accent mb-2 block">0–33%: Beginner</span>
+                            <p class="text-sm text-gray-600">Focus op basisautomatisatie en het begrijpen van prompts. Experimenteer met gratis tools.</p>
+                        </div>
+                        <div class="p-6 border border-gray-100 rounded-xl bg-gray-50/50">
+                            <span class="text-sm font-bold text-accent mb-2 block">34–66%: Intermediate</span>
+                            <p class="text-sm text-gray-600">Integreer AI in je workflows. Focus op interne kennisdeling en custom GPT's.</p>
+                        </div>
+                        <div class="p-6 border border-gray-100 rounded-xl bg-gray-50/50">
+                            <span class="text-sm font-bold text-accent mb-2 block">67–100%: Advanced</span>
+                            <p class="text-sm text-gray-600">Strategische implementatie met API's. AI is een kernonderdeel van je groeistrategie.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Sidebar Column -->
+        <aside class="space-y-8">
+            <div class="p-8 border border-gray-100 rounded-xl bg-white shadow-sm">
+                <h3 class="text-lg font-black mb-6 tracking-tight">Waarom voor Whatsnext kiezen als jouw AI-partner?</h3>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center shrink-0">
+                            <span class="text-accent font-bold">1</span>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold mb-1">KMO-Expertise</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Jarenlang bewezen expertise in het automatiseren van specifieke KMO-processen.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center shrink-0">
+                            <span class="text-accent font-bold">2</span>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold mb-1">No-Nonsense Aanpak</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Geen vage AI-beloftes, maar direct bruikbare tools en meetbare resultaten.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center shrink-0">
+                            <span class="text-accent font-bold">3</span>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold mb-1">Volledige Ontzorging</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Van strategische audit over training tot de volledige technische implementatie.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center shrink-0">
+                            <span class="text-accent font-bold">4</span>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold mb-1">Lokale Marktfocus</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Tools en strategieën die werken binnen de Belgische wetgeving en bedrijfscultuur.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+  </main>
+
+  <footer id="site-footer">
+    <script>fetch('/src/components/footer.html').then(r=>r.text()).then(h=>document.getElementById('site-footer').innerHTML=h);</script>
+  </footer>
+
+  <script type="module" src="/src/js/app.js"></script>
+</body>
+</html>

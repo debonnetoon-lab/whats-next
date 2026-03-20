@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Consultancy | Whatsnext</title>
+  <meta name="description" content="Expert AI advies op afroep. Wij helpen Belgische KMO's met specifieke AI uitdagingen, tool-selectie en strategische besluitvorming." />
+  <link rel="stylesheet" href="/src/css/tailwind.css" />
+  <style>
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    .animate-fade-in { animation: fadeInUp 0.6s ease-out forwards; }
+    [data-reveal] { opacity:0; transform:translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    [data-reveal].revealed { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body class="bg-base text-text selection:bg-accent selection:text-white">
+
+  <header id="site-header">
+    <script>fetch('/src/components/header.html').then(r=>r.text()).then(h=>document.getElementById('site-header').innerHTML=h);</script>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 mb-24">
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-24 mesh-gradient-green -mt-32 rounded-b-[64px] overflow-hidden animate-fade-in text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/50 border border-white shadow-sm text-green-700 font-black text-[10px] uppercase tracking-widest mb-8">
+          <span class="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
+          Strategic Advisory
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black leading-[1.1] tracking-tighter mb-8">
+          Jouw on-call <br/><span class="text-accent italic font-serif font-normal lowercase tracking-normal">AI Director</span>
+        </h1>
+        <p class="text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto mb-12">
+          Heb je specifieke vragen over AI-wetgeving, tool-architectuur of data-strategie? Onze consultants staan klaar met actiegericht advies.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://calendly.com/hallo-whats-next/30min" target="_blank" class="inline-flex items-center gap-4 bg-black text-white px-8 py-4 rounded-full font-black hover:scale-105 hover:bg-accent transition-all shadow-2xl">
+            Plan een gesprek
+          </a>
+          <a href="/src/pages/scan.html" class="inline-flex items-center gap-4 border border-gray-200 px-8 py-4 rounded-full font-black hover:bg-white transition-all text-[10px] uppercase tracking-widest">
+            Doe de Maturity Scan
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wat we doen -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+      <div class="flex flex-col lg:flex-row gap-16">
+        <div class="lg:w-1/3">
+          <h2 class="text-4xl font-black tracking-tighter mb-6">Expertise waarop je kan bouwen</h2>
+          <p class="text-gray-500 leading-relaxed">Soms heb je geen volledig traject nodig, maar wel een expert die over je schouder meekijkt.</p>
+        </div>
+        <div class="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div class="space-y-4">
+            <h4 class="font-black text-xs uppercase tracking-widest text-accent">Vraagstukken</h4>
+            <div class="group p-6 bg-white border border-gray-100 rounded-3xl hover:shadow-lg transition-all">
+                <h5 class="font-black mb-2">Build vs Buy</h5>
+                <p class="text-gray-400 text-sm">Moet je zelf iets bouwen of een bestaande tool kopen? Wij analyseren de TCO (Total Cost of Ownership).</p>
+            </div>
+            <div class="group p-6 bg-white border border-gray-100 rounded-3xl hover:shadow-lg transition-all">
+                <h5 class="font-black mb-2">AI Governance</h5>
+                <p class="text-gray-400 text-sm">Stel richtlijnen op voor veilig en ethisch AI-gebruik binnen je organisatie.</p>
+            </div>
+          </div>
+          <div class="space-y-4 mt-8 sm:mt-0">
+            <h4 class="font-black text-xs uppercase tracking-widest text-accent">Begeleiding</h4>
+            <div class="group p-6 bg-white border border-gray-100 rounded-3xl hover:shadow-lg transition-all">
+                <h5 class="font-black mb-2">Vendor Selection</h5>
+                <p class="text-gray-400 text-sm">Wij evalueren AI-leveranciers en tools op basis van objectieve kritische criteria.</p>
+            </div>
+            <div class="group p-6 bg-white border border-gray-100 rounded-3xl hover:shadow-lg transition-all">
+                <h5 class="font-black mb-2">Fractional AI Lead</h5>
+                <p class="text-gray-400 text-sm">Huur ons in voor een vast aantal uren per maand als strategisch klankbord.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hoe het werkt -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black tracking-tighter mb-4 italic font-serif leading-tight text-accent lowercase tracking-normal">eenvoudig</h2>
+                <h2 class="text-4xl font-black tracking-tighter -mt-6">Toegang tot expertise</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-center gap-6 p-6 bg-gray-50 rounded-3xl border border-gray-100">
+                    <span class="w-12 h-12 rounded-full bg-white flex items-center justify-center font-black shadow-sm">1</span>
+                    <div>
+                        <h4 class="font-black">Briefing</h4>
+                        <p class="text-gray-400 text-sm">Je stuurt ons je vraagstuk of uitdaging door via e-mail of intake-gesprek.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 p-6 bg-gray-50 rounded-3xl border border-gray-100">
+                    <span class="w-12 h-12 rounded-full bg-white flex items-center justify-center font-black shadow-sm">2</span>
+                    <div>
+                        <h4 class="font-black">Expert Review</h4>
+                        <p class="text-gray-400 text-sm">Onze consultants duiken in de details en bereiden een advies voor.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 p-8 bg-black text-white rounded-3xl shadow-2xl">
+                    <span class="w-12 h-12 rounded-full bg-accent flex items-center justify-center font-black text-white">3</span>
+                    <div>
+                        <h4 class="font-black">Consultancy Call</h4>
+                        <p class="text-gray-400 text-sm">Een 1-op-1 sessie waar we het advies bespreken en concrete acties definiëren.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultaten -->
+    <section class="py-24 border-t border-gray-100" data-reveal>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-8 border border-gray-100 rounded-3xl bg-white">
+                <h4 class="font-black mb-4 uppercase tracking-tighter text-sm text-gray-300">Impact 01</h4>
+                <p class="font-black text-xl leading-tight">Geen dure miskoop van software</p>
+            </div>
+            <div class="p-8 border border-gray-100 rounded-3xl bg-white">
+                <h4 class="font-black mb-4 uppercase tracking-tighter text-sm text-gray-300">Impact 02</h4>
+                <p class="font-black text-xl leading-tight">Snelle antwoorden op complexe vragen</p>
+            </div>
+            <div class="p-8 border border-gray-100 rounded-3xl bg-white">
+                <h4 class="font-black mb-4 uppercase tracking-tighter text-sm text-gray-300">Impact 03</h4>
+                <p class="font-black text-xl leading-tight">Zekerheid over data-veiligheid</p>
+            </div>
+            <div class="p-8 border border-gray-100 rounded-3xl bg-white">
+                <h4 class="font-black mb-4 uppercase tracking-tighter text-sm text-gray-300">Impact 04</h4>
+                <p class="font-black text-xl leading-tight">Strategische voorsprong in de markt</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 text-center" data-reveal>
+      <h2 class="text-3xl md:text-5xl font-black mb-8 leading-tight">Nood aan <br/><span class="text-accent italic font-serif font-normal lowercase tracking-normal">expertise</span>?</h2>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <a href="https://calendly.com/hallo-whats-next/30min" target="_blank" class="bg-black text-white px-10 py-5 rounded-full font-black hover:bg-accent transition-all shadow-xl">
+          Plan een kennismaking
+        </a>
+        <a href="/src/pages/scan.html" class="text-text font-black text-[10px] uppercase tracking-widest border-b-2 border-accent hover:border-black transition-all">
+          Of doe eerst de Maturity Scan
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer">
+    <script>fetch('/src/components/footer.html').then(r=>r.text()).then(h=>document.getElementById('site-footer').innerHTML=h);</script>
+  </footer>
+
+  <script>
+    (function(){
+      const obs = new IntersectionObserver(entries => entries.forEach((e,i) => { if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('revealed'), i*80); obs.unobserve(e.target); }}), {threshold:0.12});
+      document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
+    })();
+  </script>
+</body>
+</html>

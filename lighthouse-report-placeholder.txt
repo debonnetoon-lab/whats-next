@@ -1,0 +1,5 @@
+Instructies om Lighthouse lokaal te draaien:
+1. Start de dev server: npm run dev
+2. In een nieuwe terminal, draai: npx lighthouse http://localhost:3000 --view
+3. Bekijk het rapport in je browser.
+Target: Performance >= 90, Accessibility >= 90.

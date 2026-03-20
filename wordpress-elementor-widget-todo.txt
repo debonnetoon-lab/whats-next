@@ -1,0 +1,37 @@
+# WHATSNEXT AI MATURITY SCAN - DOCUMENTATIE & WP CONVERSIE
+
+Dit is de 'Hard Prompt' versie van de Maturity Scan (scan.html). 
+DOEL: Een interactieve tool die de AI-volwassenheid van een KMO berekent en een direct actieplan (met Calendly link) voorstelt.
+
+## HOE HET WERKT (Frontend Logica)
+1. **Data Structuur**: De vragen, antwoorden en gewichten staan in `src/js/maturity-scan.js`.
+2. **Scoring**: Elke vraag heeft een gewicht. De som wordt berekend tot een percentage (0-100%).
+3. **Maturity Levels**: Op basis van de score wordt een level gekozen (Beginner, Intermediate, Advanced) met bijbehorende adviezen, tools en KPI's.
+4. **Persistence**: De resultaten worden opgeslagen in `localStorage` onder de key `whatsnext_scan`.
+5. **CTA**: Na de scan verschijnt een directe link naar Calendly om een gesprek in te plannen.
+
+## TODO: OMZETTEN NAAR WORDPRESS / ELEMENTOR WIDGET
+Om dit om te zetten naar een herbruikbare Elementor Widget, volg deze stappen:
+
+1. **Widget Structuur (PHP)**: 
+   - Maak een nieuwe Elementor Widget class aan (`Whatsnext_Scan_Widget`).
+   - Gebruik de `render()` functie om de HTML structuur uit `scan.html` te kopiëren.
+   - Zorg dat de wrapper een uniek ID heeft voor JS initialisatie.
+
+2. **ACF Integratie**:
+   - Maak een ACF Options pagina of velden aan voor de 'Maturity Levels' adviesteksten.
+   - Gebruik `get_field()` in PHP om deze data door te geven aan het JavaScript (bijv. via `wp_localize_script`).
+
+3. **Scripts & Styles**:
+   - Registreer en enqueue de `maturity-scan.js` en `tailwind.css` (of de gecompileerde WP styles).
+   - Gebruik `elementor/frontend/after_enqueue_scripts` om te zorgen dat de JS pas laadt als de widget op de pagina staat.
+
+4. **Dynamische Data**:
+   - Vervang de hardcoded `maturityLevels` array in JS door de data die vanuit PHP (ACF) wordt aangeleverd.
+   - Hierdoor kan de klant de adviezen aanpassen in de WP admin zonder code te wijzigen.
+
+5. **Calendly Link**: 
+   - Maak de link in de widget settings aanpasbaar via een Elementor URL control.
+
+6. **Shortcode Optie**: 
+   - Registreer eventueel een shortcode `[whatsnext_scan]` die dezelfde HTML/JS output genereert voor maximale flexibiliteit.

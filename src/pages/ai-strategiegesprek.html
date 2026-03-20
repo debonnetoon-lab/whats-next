@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Plan een AI Strategiegesprek | Whatsnext Consultancy</title>
+  <meta name="description" content="Ontdek waar AI jouw bedrijf kan versnellen. Plan een 1-op-1 strategiegesprek met een expert van Whatsnext." />
+  <link rel="stylesheet" href="/src/css/tailwind.css" />
+  <style>
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    .animate-fade-in { animation: fadeInUp 0.6s ease-out forwards; }
+    [data-reveal] { opacity:0; transform:translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    [data-reveal].revealed { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body class="bg-base text-text selection:bg-accent selection:text-white">
+
+  <header id="site-header">
+    <script>fetch('/src/components/header.html').then(r=>r.text()).then(h=>document.getElementById('site-header').innerHTML=h);</script>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 mb-24">
+
+    <!-- Hero -->
+    <section class="relative pt-40 pb-24 mesh-gradient -mt-32 rounded-b-[64px] overflow-hidden animate-fade-in">
+      <div class="max-w-4xl mx-auto text-center px-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/50 border border-white shadow-sm text-accent font-black text-[10px] uppercase tracking-widest mb-8">
+          <span class="flex h-2 w-2 rounded-full bg-accent animate-pulse"></span>
+          Start Jouw AI-Traject
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black leading-[1.1] tracking-tighter mb-8">
+          Plan een AI <br/><span class="text-accent italic font-serif font-normal lowercase tracking-normal">strategiegesprek</span>
+        </h1>
+        <p class="text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto">
+          Ontdek waar AI jouw bedrijf kan versnellen. In 30 minuten brengen we jouw kansen in kaart en bepalen we de volgende stappen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Content Grid -->
+    <section class="py-24" data-reveal>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        
+        <!-- Left: What you get -->
+        <div>
+          <h2 class="text-4xl font-black tracking-tighter mb-12">Wat je krijgt in dit gesprek</h2>
+          
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <div class="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0 mt-1">🔍</div>
+              <div>
+                <h4 class="font-black text-xl mb-2">Analyse van jouw bedrijf</h4>
+                <p class="text-gray-400 leading-relaxed">We duiken in je huidige processen en identificeren waar de grootste knelpunten zitten.</p>
+              </div>
+            </div>
+            
+            <div class="flex gap-6">
+              <div class="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0 mt-1">💡</div>
+              <div>
+                <h4 class="font-black text-xl mb-2">Concrete AI Kansen</h4>
+                <p class="text-gray-400 leading-relaxed">Geen algemeen verhaal, maar specifieke use cases die voor jouw sector en team werken.</p>
+              </div>
+            </div>
+            
+            <div class="flex gap-6">
+              <div class="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0 mt-1">🛠️</div>
+              <div>
+                <h4 class="font-black text-xl mb-2">Tool Aanbevelingen</h4>
+                <p class="text-gray-400 leading-relaxed">Welke tools passen bij je budget en technische infrastructuur? We geven eerlijk advies.</p>
+              </div>
+            </div>
+            
+            <div class="flex gap-6">
+              <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center text-2xl flex-shrink-0 mt-1">🚀</div>
+              <div>
+                <h4 class="font-black text-xl mb-2">Implementatie Roadmap</h4>
+                <p class="text-gray-400 leading-relaxed">We schetsen een tijdlijn en plan van aanpak om AI effectief uit te rollen.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-16 p-8 bg-gray-50 rounded-3xl border border-gray-100">
+            <h4 class="font-black text-sm uppercase tracking-widest mb-4">Voor wie is dit bedoeld?</h4>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-sm font-bold"><span class="text-accent underline">→</span> Belgische KMO's (10-250 medewerkers)</li>
+              <li class="flex items-center gap-3 text-sm font-bold"><span class="text-accent underline">→</span> Management teams & Zaakvoerders</li>
+              <li class="flex items-center gap-3 text-sm font-bold"><span class="text-accent underline">→</span> Innovatie- & IT managers</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right: Lead Form -->
+        <div id="lead-form-container">
+            <script>fetch('/src/components/lead-form.html').then(r=>r.text()).then(h=>document.getElementById('lead-form-container').innerHTML=h);</script>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer">
+    <script>fetch('/src/components/footer.html').then(r=>r.text()).then(h=>document.getElementById('site-footer').innerHTML=h);</script>
+  </footer>
+
+  <script>
+    (function(){
+      const obs = new IntersectionObserver(entries => entries.forEach((e,i) => { if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('revealed'), i*80); obs.unobserve(e.target); }}), {threshold:0.12});
+      document.querySelectorAll('[data-reveal]').forEach(el=>obs.observe(el));
+    })();
+  </script>
+</body>
+</html>

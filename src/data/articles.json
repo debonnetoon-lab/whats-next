@@ -1,0 +1,29 @@
+[
+  {
+    "id": "a1",
+    "title": "AI in Bouw: 3 quick wins",
+    "content": "<p>AI kan planningen optimaliseren en fouten verminderen door automatische clash detection en resource planning.</p>",
+    "summary": "AI versnelt planning en vermindert fouten in bouwprojecten.",
+    "bullets": ["Automatische planning", "Foutreductie", "Snellere offertes"],
+    "tags": ["bouw","productiviteit"],
+    "published_at": "2026-03-01"
+  },
+  {
+    "id": "a2",
+    "title": "Facturatie automatiseren voor KMO's",
+    "content": "<p>Automatiseer factuurverwerking met OCR en regels voor matching van betalingen.</p>",
+    "summary": "Automatiseer facturatie om tijd te besparen en fouten te verminderen.",
+    "bullets": ["OCR factuurherkenning","Automatische matching","Betaalherinneringen"],
+    "tags": ["finance","automatisering"],
+    "published_at": "2026-02-20"
+  },
+  {
+    "id": "a3",
+    "title": "HR: AI voor werving en onboarding",
+    "content": "<p>Gebruik AI voor CV‑screening en gepersonaliseerde onboarding flows.</p>",
+    "summary": "AI maakt werving sneller en onboarding persoonlijker.",
+    "bullets": ["CV‑screening","Onboarding flows","Competentie matching"],
+    "tags": ["hr","people"],
+    "published_at": "2026-01-15"
+  }
+]
