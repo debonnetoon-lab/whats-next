@@ -1,0 +1,91 @@
+<div class="bg-white border border-gray-100 rounded-[32px] p-8 lg:p-12 shadow-sm relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-32 h-32 bg-accent/5 blur-3xl rounded-full -mr-16 -mt-16"></div>
+    
+    <h3 class="text-2xl font-black tracking-tighter mb-2">Direct contact opnemen</h3>
+    <p class="text-gray-400 text-sm mb-8">Laat je gegevens achter en we nemen binnen 24 uur contact met je op.</p>
+    
+    <form id="lead-form" action="https://formspree.io/f/mwvrzvnv" method="POST" class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label class="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2 px-1">Naam</label>
+                <input type="text" name="name" required placeholder="Jan Peeters" 
+                       class="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl text-sm focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all">
+            </div>
+            <div>
+                <label class="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2 px-1">Email</label>
+                <input type="email" name="_replyto" required placeholder="jan@bedrijf.be" 
+                       class="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl text-sm focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all">
+            </div>
+        </div>
+        
+        <div>
+            <label class="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2 px-1">Bedrijf</label>
+            <input type="text" name="company" placeholder="Peeters Construct" 
+                   class="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl text-sm focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all">
+        </div>
+        
+        <div>
+            <label class="block text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2 px-1">Bericht</label>
+            <textarea name="message" rows="4" placeholder="Waar kunnen we je bij helpen?" 
+                      class="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-2xl text-sm focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all resize-none"></textarea>
+        </div>
+        
+        <button type="submit" class="w-full py-5 bg-black text-white rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-accent transition-all hover:scale-[1.02] active:scale-95 shadow-xl">
+            Verzenden →
+        </button>
+        
+        <p class="text-[9px] text-gray-300 text-center mt-4">Je gegevens worden veilig verwerkt conform onze privacy gids.</p>
+    </form>
+    
+    <!-- Success Message (hidden by default) -->
+    <div id="lead-success" class="hidden absolute inset-0 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center text-center p-12 animate-fade-in">
+        <div class="w-20 h-20 bg-green-50 text-green-500 rounded-full flex items-center justify-center text-4xl mb-6">✓</div>
+        <h4 class="text-2xl font-black tracking-tighter mb-2">Bedankt!</h4>
+        <p class="text-gray-500">We hebben je bericht ontvangen en nemen snel contact op.</p>
+        <button onclick="document.getElementById('lead-success').classList.add('hidden')" class="mt-8 text-[10px] font-black uppercase tracking-widest text-accent border-b-2 border-accent hover:text-black hover:border-black transition-all">
+            Nog een bericht sturen
+        </button>
+    </div>
+</div>
+
+<script>
+    if (document.getElementById('lead-form')) {
+        document.getElementById('lead-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('button');
+            const originalText = btn.innerHTML;
+            
+            btn.disabled = true;
+            btn.innerHTML = 'Verzenden...';
+            
+            const data = new FormData(form);
+            
+            fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    document.getElementById('lead-success').classList.remove('hidden');
+                    form.reset();
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            alert(data["errors"].map(error => error["message"]).join(", "));
+                        } else {
+                            alert("Er ging iets mis bij het verzenden. Probeer het later opnieuw.");
+                        }
+                    })
+                }
+            }).catch(error => {
+                alert("Er ging iets mis bij het verzenden. Probeer het later opnieuw.");
+            }).finally(() => {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            });
+        });
+    }
+</script>

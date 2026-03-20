@@ -10,7 +10,7 @@
 <body class="bg-base text-text">
   
   <header id="site-header">
-    <script>fetch('/src/components/header.html').then(r=>r.text()).then(h=>document.getElementById('site-header').innerHTML=h);</script>
+    <script>fetch('/components/header.html').then(r=>r.text()).then(h=>document.getElementById('site-header').innerHTML=h);</script>
   </header>
 
   <main class="max-w-6xl mx-auto px-6 py-16">
@@ -97,7 +97,7 @@
   </main>
 
   <footer id="site-footer">
-    <script>fetch('/src/components/footer.html').then(r=>r.text()).then(h=>document.getElementById('site-footer').innerHTML=h);</script>
+    <script>fetch('/components/footer.html').then(r=>r.text()).then(h=>document.getElementById('site-footer').innerHTML=h);</script>
   </footer>
 
   <script type="module" src="/src/js/app.js"></script>
